@@ -467,43 +467,48 @@
       </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="contact" class="contact bg-light py-5">
       <div class="container" data-aos="fade-up">
     
-        <div class="section-title text-center">
-          <h2>Contato</h2>
-          <p>Fale Conosco</p>
+        <div class="section-title text-center mb-5">
+          <h2 class="fw-bold text-primary">Contato</h2>
+          <p class="text-muted">Fale Conosco</p>
         </div>
     
         <div class="row justify-content-center">
-          <div class="col-lg-8 mt-5 mt-lg-0">
+          <div class="col-lg-8">
     
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form p-4 bg-white shadow rounded-4 border">
+    
               <div class="row">
-                <div class="col-md-6 form-group">
+                <div class="col-md-6 mb-3">
                   <label for="name" class="form-label visually-hidden">Seu Nome</label>
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" required>
+                  <input type="text" name="name" class="form-control rounded-3" id="name" placeholder="Seu Nome" required>
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
+                <div class="col-md-6 mb-3">
                   <label for="email" class="form-label visually-hidden">Seu Email</label>
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email" required>
+                  <input type="email" class="form-control rounded-3" name="email" id="email" placeholder="Seu Email" required>
                 </div>
               </div>
-              <div class="form-group mt-3">
+    
+              <div class="mb-3">
                 <label for="subject" class="form-label visually-hidden">Assunto</label>
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" required>
+                <input type="text" class="form-control rounded-3" name="subject" id="subject" placeholder="Assunto" required>
               </div>
-              <div class="form-group mt-3">
+    
+              <div class="mb-3">
                 <label for="message" class="form-label visually-hidden">Mensagem</label>
-                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Mensagem" required></textarea>
+                <textarea class="form-control rounded-3" name="message" id="message" rows="5" placeholder="Mensagem" required></textarea>
               </div>
+    
               <div class="my-3">
-                <div class="loading">Carregando</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Sua mensagem foi enviada. Obrigado!</div>
+                <div class="loading small text-muted">Carregando...</div>
+                <div class="error-message alert alert-danger p-2 mt-2" style="display: none;"></div>
+                <div class="sent-message alert alert-success p-2 mt-2" style="display: none;">Sua mensagem foi enviada. Obrigado!</div>
               </div>
+    
               <div class="text-center">
-                <button type="submit">Enviar Mensagem</button>
+                <button type="submit" class="btn btn-primary px-5 py-2 rounded-pill">Enviar Mensagem</button>
               </div>
             </form>
     
