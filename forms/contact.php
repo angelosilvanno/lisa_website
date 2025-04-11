@@ -1,41 +1,46 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
+/**
+ * Requer a biblioteca "PHP Email Form".
+ * Mais informações: https://bootstrapmade.com/php-email-form/
+ */
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+// Endereço de email para recebimento
+$receiving_email_address = 'contact@example.com';
+$php_email_form = '../assets/vendor/php-email-form/php-email-form.php';
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+if (!file_exists($php_email_form)) {
+    die('Não foi possível carregar a biblioteca "PHP Email Form"!');
+}
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+include($php_email_form);
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
+$contact = new PHP_Email_Form;
+$contact->ajax = true;
+$contact->to = $receiving_email_address;
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
+// Validar e atribuir nome
+$name = $_POST['name'] ?? '';
+if (empty($name)) die('Nome é obrigatório.');
+$contact->from_name = $name;
 
-  echo $contact->send();
+// Validar e atribuir email
+$email = $_POST['email'] ?? '';
+if (empty($email)) die('Email é obrigatório.');
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) die('Email inválido.');
+$contact->from_email = $email;
+
+// Validar e atribuir assunto
+$subject = $_POST['subject'] ?? '';
+if (empty($subject)) die('Assunto é obrigatório.');
+$contact->subject = $subject;
+
+// Validar mensagem
+$message = $_POST['message'] ?? '';
+if (empty($message)) die('Mensagem é obrigatória.');
+
+$contact->add_message($name, 'De');
+$contact->add_message($email, 'Email');
+$contact->add_message($message, 'Mensagem', 10);
+
+echo $contact->send();
 ?>
