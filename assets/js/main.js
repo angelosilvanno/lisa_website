@@ -81,15 +81,20 @@
 
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
-      e.preventDefault();
+      e.preventDefault(); 
+
       let navbar = select('#navbar');
-      if (navbar.classList.contains('navbar-mobile')) {
-        navbar.classList.remove('navbar-mobile');
-        let navbarToggle = select('.mobile-nav-toggle');
-        navbarToggle.classList.toggle('bi-list');
-        navbarToggle.classList.toggle('bi-x');
-      }
+      let navbarToggle = select('.mobile-nav-toggle'); 
+
       scrollto(this.hash);
+      
+      if (navbar.classList.contains('navbar-mobile') && navbarToggle) {
+        setTimeout(() => {
+          navbar.classList.remove('navbar-mobile'); 
+          navbarToggle.classList.remove('bi-x');   
+          navbarToggle.classList.add('bi-list');
+        }, 300); 
+      }
     }
   }, true);
 
@@ -106,9 +111,9 @@
         itemSelector: '.portfolio-item',
       });
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+      let portfolioFilters = select('#portfolio-flters li', true); 
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#portfolio-flters li', function(e) { 
         e.preventDefault();
         portfolioFilters.forEach(el => el.classList.remove('filter-active'));
         this.classList.add('filter-active');
@@ -160,7 +165,7 @@
         spaceBetween: 20
       },
       1200: {
-        slidesPerView: 3,
+        slidesPerView: 3, // Garanta que haja pelo menos 3 slides para isso funcionar bem
         spaceBetween: 20
       }
     }
@@ -174,5 +179,13 @@
       mirror: false
     })
   });
+
+  // Adicionando o preloader se ele existir no HTML original (presumindo que existia)
+  let preloader = select('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      preloader.remove();
+    });
+  }
 
 })();
