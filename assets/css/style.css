@@ -127,8 +127,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.navbar a,
-.navbar a:focus {
+.navbar a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -141,30 +140,26 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 
-.navbar a i,
-.navbar a:focus i {
+.navbar a i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
 
 .navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
+.navbar a.active,
+.navbar li:hover > a {
   color: #fff;
 }
 
-#header.header-scrolled .navbar a,
-#header.header-scrolled .navbar a:focus {
+#header.header-scrolled .navbar a {
   color: var(--secondary-color);
   padding: 10px 0 10px 25px;
 }
 
 #header.header-scrolled .navbar a:hover,
-#header.header-scrolled .navbar .active,
-#header.header-scrolled .navbar .active:focus,
-#header.header-scrolled .navbar li:hover>a {
+#header.header-scrolled .navbar a.active,
+#header.header-scrolled .navbar li:hover > a {
   color: var(--primary-color);
 }
 
@@ -211,8 +206,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
   }
 
-  .navbar-mobile a,
-  .navbar-mobile a:focus {
+  .navbar-mobile a {
     padding: 12px 20px;
     font-size: 16px;
     color: var(--dark-text);
@@ -220,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .navbar-mobile a:hover,
-  .navbar-mobile .active,
+  .navbar-mobile a.active,
   .navbar-mobile li:hover > a {
     color: var(--primary-color);
     background-color: rgba(var(--primary-rgb), 0.05);
