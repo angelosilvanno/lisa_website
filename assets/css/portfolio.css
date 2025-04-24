@@ -2,12 +2,12 @@
   margin-bottom: 30px;
   background-color: #fff;
   border-radius: 8px;
-  overflow: hidden; /* Ensures rounded corners apply to images */
+  overflow: hidden; 
 }
 .portfolio-showcase .portfolio-slider img {
-  object-fit: cover; /* Ensures images cover the slide area */
-  height: 100%; /* Makes images fill the height of the slider container */
-  max-height: 350px; /* Or a specific height */
+  object-fit: cover; 
+  height: 100%; 
+  max-height: 350px; 
 }
 .portfolio-showcase .swiper-pagination-bullet {
   background-color: var(--primary-color);
@@ -19,10 +19,10 @@
 .portfolio-showcase .card-body {
     display: flex;
     flex-direction: column;
-    height: 100%; /* Ensure card body takes full height */
+    height: 100%; 
 }
 .portfolio-showcase .portfolio-details {
-    margin-top: auto; /* Pushes details to the bottom */
+    margin-top: auto; 
 }
 .portfolio-showcase .portfolio-title {
   font-size: 1.4rem;
@@ -59,7 +59,6 @@
     text-decoration: underline;
 }
 
- /* Adjust slider height on smaller screens if needed */
 @media (max-width: 767px) {
   .portfolio-showcase .portfolio-slider img {
     max-height: 250px;
@@ -82,43 +81,46 @@
     font-size: 0.8rem;
     margin-right: 0.5em;
 }
+#portfolio-showcase {
+   margin-top: 40px;  
+}
 
 /*--------------------------------------------------------------
-# Header - Estilos Específicos para Páginas Internas
+# Header 
 --------------------------------------------------------------*/
 #header.header-inner-page {
-  background: #fff; /* Fundo branco */
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08); /* Adiciona sombra */
-  /* Garante que a altura e o padding sejam os mesmos do header-scrolled se necessário */
+  background: #fff; 
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08); 
   padding: 12px 0;
 }
 
 #header.header-inner-page .logo a,
 #header.header-inner-page .logo span {
-  color: var(--dark-text); /* Texto escuro para o logo */
+  color: var(--dark-text); 
 }
 
 #header.header-inner-page .navbar a,
 #header.header-inner-page .navbar a:focus {
-  color: var(--secondary-color); /* Texto mais escuro para os links da nav */
-  padding: 10px 0 10px 25px; /* Garante o padding correto */
+  color: var(--secondary-color); 
+  padding: 10px 0 10px 25px; 
 }
 
 #header.header-inner-page .navbar a:hover,
 #header.header-inner-page .navbar .active,
 #header.header-inner-page .navbar .active:focus,
 #header.header-inner-page .navbar li:hover > a {
-  color: var(--primary-color); /* Cor primária para ativo/hover */
+  color: var(--primary-color); 
 }
 
 #header.header-inner-page .mobile-nav-toggle {
-  color: var(--dark-text); /* Cor escura para o botão mobile */
+  color: var(--dark-text); 
 }
-
-/* Garante que os links do menu dropdown mobile estejam estilizados corretamente
-   quando abertos a partir de uma página interna */
-/* (As regras .navbar-mobile existentes no seu CSS devem cobrir isso,
-   mas verifique se as cores estão corretas para fundo branco) */
+#header.header-inner-page .mobile-nav-toggle:hover {
+  color: var(--primary-color); 
+}
+#header.header-inner-page .mobile-nav-toggle:focus {
+  color: var(--primary-color); 
+}
 .navbar-mobile {
     background-color: #fff;
 }
@@ -126,7 +128,7 @@
 .navbar-mobile a:focus {
     padding: 12px 20px;
     font-size: 16px;
-    color: var(--dark-text); /* Garante texto escuro no mobile */
+    color: var(--dark-text); 
 }
 .navbar-mobile a:hover,
 .navbar-mobile .active,
