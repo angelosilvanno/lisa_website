@@ -26,16 +26,13 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  
-  <link href="assets/css/portfolio.css" rel="stylesheet"> 
-
+  <link href="assets/css/portfolio.css" rel="stylesheet"> <!-- CSS específico para o portfólio -->
 </head>
 
-<body> <!-- Removida a classe específica do body, controlaremos pelo header -->
+<body>
 
   <!-- ======= Header ======= -->
-  <!-- Adicionada classe 'header-light' para fundo branco nesta página -->
-  <header id="header" class="fixed-top d-flex align-items-center header-light">
+  <header id="header" class="fixed-top d-flex align-items-center header-scrolled"> <!-- Use header-scrolled for consistent styling -->
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
@@ -64,10 +61,10 @@
       <section id="breadcrumbs" class="breadcrumbs">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
-            <h2>Portfólio</h2> <!-- Título principal à esquerda -->
+            <h2>Portfólio</h2>
             <ol>
-              <li><a href="index.html">Home</a></li> 
-              <li>Portfólio</li> 
+              <li><a href="index.html">Home</a></li>
+              <li>Portfólio</li>
             </ol>
           </div>
         </div>
@@ -89,13 +86,15 @@
                 <div class="portfolio-entry card shadow-sm">
                     <div class="row g-0">
                         <div class="col-md-6">
+                            <!-- Swiper Slider -->
                             <div class="portfolio-slider swiper h-100">
                                 <div class="swiper-wrapper align-items-center">
-                                <div class="swiper-slide"><img src="assets/img/portfolio/imagem1.png" class="img-fluid rounded-start" alt="Detecção de Fissuras - Imagem 1"></div>
-                                <div class="swiper-slide"><img src="assets/img/portfolio/imagem1.1.png" class="img-fluid rounded-start" alt="Detecção de Fissuras - Imagem 2"></div>
+                                    <div class="swiper-slide"><img src="assets/img/portfolio/imagem1.png" class="img-fluid" alt="Detecção de Fissuras - Imagem 1"></div>
+                                    <div class="swiper-slide"><img src="assets/img/portfolio/imagem1.1.png" class="img-fluid" alt="Detecção de Fissuras - Imagem 2"></div>
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
+                            <!-- End Swiper Slider -->
                         </div>
                         <div class="col-md-6 d-flex flex-column">
                             <div class="card-body">
@@ -121,13 +120,15 @@
                 <div class="portfolio-entry card shadow-sm">
                 <div class="row g-0">
                     <div class="col-md-6">
-                    <div class="portfolio-slider swiper h-100">
-                        <div class="swiper-wrapper align-items-center">
-                        <div class="swiper-slide"><img src="assets/img/portfolio/imagem2.png" class="img-fluid rounded-start" alt="Diagnóstico Hipotireoidismo - Imagem 1"></div>
-                        <div class="swiper-slide"><img src="assets/img/portfolio/imagem2.1.png" class="img-fluid rounded-start" alt="Diagnóstico Hipotireoidismo - Imagem 2"></div>
+                        <!-- Swiper Slider -->
+                        <div class="portfolio-slider swiper h-100">
+                            <div class="swiper-wrapper align-items-center">
+                                <div class="swiper-slide"><img src="assets/img/portfolio/imagem2.png" class="img-fluid" alt="Diagnóstico Hipotireoidismo - Imagem 1"></div>
+                                <div class="swiper-slide"><img src="assets/img/portfolio/imagem2.1.png" class="img-fluid" alt="Diagnóstico Hipotireoidismo - Imagem 2"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
+                        <!-- End Swiper Slider -->
                     </div>
                     <div class="col-md-6 d-flex flex-column">
                     <div class="card-body">
@@ -154,13 +155,15 @@
                 <div class="portfolio-entry card shadow-sm">
                 <div class="row g-0">
                     <div class="col-md-6">
-                    <div class="portfolio-slider swiper h-100">
-                        <div class="swiper-wrapper align-items-center">
-                        <div class="swiper-slide"><img src="assets/img/portfolio/imagem3.png" class="img-fluid rounded-start" alt="Rota UFERSA - Imagem 1"></div>
-                        <div class="swiper-slide"><img src="assets/img/portfolio/imagem3.1.png" class="img-fluid rounded-start" alt="Rota UFERSA - Imagem 2"></div>
+                        <!-- Swiper Slider -->
+                        <div class="portfolio-slider swiper h-100">
+                            <div class="swiper-wrapper align-items-center">
+                                <div class="swiper-slide"><img src="assets/img/portfolio/imagem3.png" class="img-fluid" alt="Rota UFERSA - Imagem 1"></div>
+                                <div class="swiper-slide"><img src="assets/img/portfolio/imagem3.1.png" class="img-fluid" alt="Rota UFERSA - Imagem 2"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
+                        <!-- End Swiper Slider -->
                     </div>
                     <div class="col-md-6 d-flex flex-column">
                     <div class="card-body">
@@ -187,12 +190,14 @@
                 <div class="portfolio-entry card shadow-sm">
                 <div class="row g-0">
                     <div class="col-md-6">
-                    <div class="portfolio-slider swiper h-100">
-                        <div class="swiper-wrapper align-items-center">
-                        <div class="swiper-slide"><img src="assets/img/portfolio/imagem4.png" class="img-fluid rounded-start" alt="Projeto Carcará"></div>
+                        <!-- Only one image, but keep slider structure for consistency? Or simplify? -->
+                        <!-- Let's keep it for consistency, easier JS init -->
+                        <div class="portfolio-slider swiper h-100">
+                            <div class="swiper-wrapper align-items-center">
+                                <div class="swiper-slide"><img src="assets/img/portfolio/imagem4.png" class="img-fluid" alt="Projeto Carcará"></div>
+                            </div>
+                            <div class="swiper-pagination"></div> <!-- Will show only one dot -->
                         </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
                     </div>
                     <div class="col-md-6 d-flex flex-column">
                     <div class="card-body">
@@ -218,12 +223,13 @@
                 <div class="portfolio-entry card shadow-sm">
                 <div class="row g-0">
                     <div class="col-md-6">
-                    <div class="portfolio-slider swiper h-100">
-                        <div class="swiper-wrapper align-items-center">
-                        <div class="swiper-slide"><img src="assets/img/portfolio/projeto6.png" class="img-fluid rounded-start" alt="Projeto Quero Água"></div>
+                        <!-- Only one image, keep slider structure -->
+                        <div class="portfolio-slider swiper h-100">
+                            <div class="swiper-wrapper align-items-center">
+                                <div class="swiper-slide"><img src="assets/img/portfolio/projeto6.png" class="img-fluid" alt="Projeto Quero Água"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
                     </div>
                     <div class="col-md-6 d-flex flex-column">
                     <div class="card-body">
@@ -243,19 +249,18 @@
                 </div>
             </div><!-- Fim Projeto 5 -->
 
-            <!-- ... (Repita para os outros projetos) ... -->
-
-             <!-- Projeto 31: EduBolsas (Exemplo Final) -->
+            <!-- Projeto 31: EduBolsas (Exemplo Final) -->
             <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
                 <div class="portfolio-entry card shadow-sm">
                 <div class="row g-0">
                     <div class="col-md-6">
-                    <div class="portfolio-slider swiper h-100">
-                        <div class="swiper-wrapper align-items-center">
-                        <div class="swiper-slide"><img src="assets/img/portfolio/projeto31.png" class="img-fluid rounded-start" alt="EduBolsas - Sistema de Gerenciamento de Bolsistas"></div>
+                        <!-- Only one image, keep slider structure -->
+                        <div class="portfolio-slider swiper h-100">
+                            <div class="swiper-wrapper align-items-center">
+                                <div class="swiper-slide"><img src="assets/img/portfolio/projeto31.png" class="img-fluid" alt="EduBolsas - Sistema de Gerenciamento de Bolsistas"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
                     </div>
                     <div class="col-md-6 d-flex flex-column">
                     <div class="card-body">
@@ -282,47 +287,52 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-   <footer id="footer">
-       <div class="container">
-           <!-- Conteúdo do Footer Mantido -->
-           <div class="footer-top pb-4">
-               <div class="row gy-4">
-                   <div class="col-lg-6 col-md-6 footer-info">
-                        <a href="index.html" class="logo d-flex align-items-center mb-3 text-white text-decoration-none">
-                           <span style="font-size: 24px; font-weight: 600;">LISA</span>
-                        </a>
-                        <p>Laboratório de Inovação em Software e Automação.</p>
-                       <div class="social-links mt-3">
-                           <a href="https://www.instagram.com/lisa.ufersa/" target="_blank" rel="noopener noreferrer" class="instagram"><i class="bx bxl-instagram"></i></a>
-                           <a href="https://github.com/lisa-ufersa" target="_blank" rel="noopener noreferrer" class="github"><i class="bx bxl-github"></i></a>
-                       </div>
-                   </div>
-                   <div class="col-lg-3 col-6 footer-links">
-                       <h4>Institucional</h4>
-                       <ul class="list-unstyled">
-                           <li><i class="bx bx-chevron-right"></i> <a href="./index.html#hero" class="text-decoration-none scrollto">Início</a></li>
-                           <li><i class="bx bx-chevron-right"></i> <a href="./index.html#about" class="text-decoration-none scrollto">Sobre</a></li>
-                           <li><i class="bx bx-chevron-right"></i> <a href="./index.html#services" class="text-decoration-none scrollto">Serviços</a></li>
-                           <li><i class="bx bx-chevron-right"></i> <a href="https://ufersa.edu.br/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">UFERSA</a></li>
-                       </ul>
-                   </div>
-                   <div class="col-lg-3 col-6 footer-links">
-                       <h4>Nossas Áreas</h4>
-                       <ul class="list-unstyled">
-                            <li><i class="bx bx-chevron-right"></i> <a href="./index.html#services" class="text-decoration-none scrollto">Automação</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="./index.html#services" class="text-decoration-none scrollto">Inteligência Artificial</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="./index.html#services" class="text-decoration-none scrollto">Web & Mobile</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="./index.html#services" class="text-decoration-none scrollto">IoT</a></li>
-                       </ul>
-                   </div>
-               </div>
-           </div>
-            <div class="copyright pt-3 mt-3 border-top border-secondary border-opacity-25">
-                © <strong><span>LISA/UFERSA</span></strong>. Todos os direitos reservados.
-           </div>
-       </div>
-   </footer><!-- End Footer -->
+ <!-- ======= Footer ======= -->
+ <footer id="footer">
+  <div class="container">
+      <div class="footer-top pb-4">
+          <div class="row gy-4">
+              <div class="col-lg-6 col-md-6 footer-info">
+                   <a href="index.html" class="logo d-flex align-items-center mb-3 text-white text-decoration-none">
+                      <span style="font-size: 24px; font-weight: 600;">LISA</span>
+                   </a>
+                   <p>Laboratório de Inovação em Software e Automação.</p>
+                  <div class="social-links mt-3">
+                      <a href="https://www.instagram.com/lisa.ufersa/" target="_blank" rel="noopener noreferrer" class="instagram"><i class="bx bxl-instagram"></i></a>
+                      <a href="https://github.com/lisa-ufersa" target="_blank" rel="noopener noreferrer" class="github"><i class="bx bxl-github"></i></a>
+                  </div>
+              </div>
+
+              <div class="col-lg-3 col-6 footer-links">
+                  <h4>Institucional</h4>
+                  <ul class="list-unstyled">
+                      <li><i class="bx bx-chevron-right"></i> <a href="#hero" class="text-decoration-none scrollto">Início</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#about" class="text-decoration-none scrollto">Sobre</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#services" class="text-decoration-none scrollto">Serviços</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="https://ufersa.edu.br/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">UFERSA</a></li>
+                  </ul>
+              </div>
+
+              <!-- Coluna de Links Nossas Áreas -->
+              <div class="col-lg-3 col-6 footer-links">
+                  <h4>Nossas Áreas</h4>
+                  <ul class="list-unstyled">
+                      <li><i class="bx bx-chevron-right"></i> <a href="#services" class="text-decoration-none scrollto">Automação</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#services" class="text-decoration-none scrollto">Inteligência Artificial</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#services" class="text-decoration-none scrollto">Web & Mobile</a></li>
+                      <li><i class="bx bx-chevron-right"></i> <a href="#services" class="text-decoration-none scrollto">IoT</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="container">
+      <div class="copyright pt-3 mt-3 border-top border-secondary border-opacity-25">
+           © <strong><span>LISA/UFERSA</span></strong>. Todos os direitos reservados.
+      </div>
+  </div>
+</footer><!-- End Footer -->
 
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -338,6 +348,53 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Initialize Swiper for portfolio entries -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      new Swiper('.portfolio-slider', {
+        speed: 600,
+        loop: true, // Loop if more than one slide
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false
+        },
+        slidesPerView: 'auto', // Often better for responsive, or set to 1
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true
+        },
+        // Add navigation arrows if desired
+        // navigation: {
+        //   nextEl: '.swiper-button-next',
+        //   prevEl: '.swiper-button-prev',
+        // },
+        on: {
+            init: function (swiper) {
+                // Disable loop if only one slide
+                if (swiper.slides.length <= 1) {
+                    swiper.params.loop = false;
+                    swiper.update(); // Update swiper instance
+                    // Optionally hide pagination if only one slide
+                    if(swiper.pagination.el) {
+                        swiper.pagination.el.style.display = 'none';
+                    }
+                } else {
+                     // Ensure pagination is visible if more than one slide
+                    if(swiper.pagination.el) {
+                         swiper.pagination.el.style.display = 'block';
+                    }
+                }
+            },
+            slideChange: function (swiper) {
+                 // Handle cases where loop might be dynamically changed if needed
+            }
+        }
+      });
+    });
+  </script>
+
 
 </body>
 

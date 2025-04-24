@@ -1,240 +1,84 @@
-/*--------------------------------------------------------------
-# Header Leve (Fundo Branco)
---------------------------------------------------------------*/
-#header.header-light {
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+.portfolio-showcase .portfolio-entry {
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden; /* Ensures rounded corners apply to images */
 }
-#header.header-light .logo a,
-#header.header-light .logo span,
-#header.header-light .navbar a,
-#header.header-light .mobile-nav-toggle {
-   color: var(--dark-text); /* Texto escuro no header branco */
+.portfolio-showcase .portfolio-slider img {
+  object-fit: cover; /* Ensures images cover the slide area */
+  height: 100%; /* Makes images fill the height of the slider container */
+  max-height: 350px; /* Or a specific height */
 }
-#header.header-light .navbar a:hover,
-#header.header-light .navbar .active {
-   color: var(--primary-color); /* Cor primária no hover/ativo */
+.portfolio-showcase .swiper-pagination-bullet {
+  background-color: var(--primary-color);
+  opacity: 0.6;
 }
-/* Cor do botão mobile no header leve */
-@media (max-width: 991px) {
-   #header.header-light .mobile-nav-toggle {
-      color: var(--dark-text) !important;
-   }
-}
-
-.breadcrumbs {
-  padding: 18px 0;                 /* Padding vertical sutil */
-  background-color: #f8f9fa;       /* Fundo cinza bem claro (similar a var(--light-bg)) */
-  min-height: auto;
-  border-bottom: 1px solid #e9ecef; /* Linha inferior sutil */
-  margin-top: 70px;                /* Espaço abaixo do header fixo (AJUSTE SE NECESSÁRIO) */
-}
-
-.breadcrumbs .container > div { /* Alvo do d-flex */
-    align-items: center; /* Garante alinhamento vertical */
-}
-
-
-.breadcrumbs h2 {
-  font-size: 24px;                /* Tamanho do título "Portfólio" */
-  font-weight: 600;
-  color: #495057;                /* Cor cinza escuro para o título */
-  margin: 0;                      /* Sem margens */
-  padding: 0;                     /* Sem paddings */
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 15px;                 /* Tamanho da fonte do caminho */
-  font-weight: 500;                /* Peso da fonte */
-}
-
-/* Remove estilos de lista padrão */
-.breadcrumbs ol li {
-  padding-left: 0;
-}
-
-/* Espaçamento antes do separador */
-.breadcrumbs ol li+li {
-  padding-left: 10px;
-}
-
-/* Estilo do separador "/" */
-.breadcrumbs ol li+li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #6c757d;                 /* Cor cinza para o separador */
-  content: "/";
-}
-
-/* Estilo do link ("Home") */
-.breadcrumbs ol li a {
-  color: var(--primary-color);     /* Usa a cor primária definida no :root (o tom laranja/verde) */
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.breadcrumbs ol li a:hover {
-  color: var(--primary-hover-color); /* Cor de hover definida no :root */
-  text-decoration: none;
-}
-
-/* Estilo do item atual ("Portfólio" no caminho) */
-.breadcrumbs ol li:last-child {
-  color: #6c757d;                 /* Cor cinza secundária (texto não linkado) */
-}
-.breadcrumbs ol li:last-child a {
-  color: #6c757d;                 /* Cor cinza secundária (texto não linkado) */
-  pointer-events: none;           /* Desabilita o clique no link */
-  text-decoration: none;          /* Remove sublinhado */
-}
-.breadcrumbs ol li:last-child::before {
-  display: none;                  /* Remove o separador antes do último item */
-}
-
-/*--------------------------------------------------------------
-# Portfolio Showcase Section
---------------------------------------------------------------*/
-.portfolio-showcase {
-  padding: 60px 0;
-}
-.portfolio-showcase .section-title {
-  margin-bottom: 40px;
-}
-
-/* Card de Entrada do Portfólio (Bootstrap Card) */
-.portfolio-entry.card {
-  border: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;
-  overflow: hidden; /* Garante que imagem respeite o border-radius */
-  border-radius: 0.5rem; /* Arredondamento padrão do Bootstrap */
-}
-
-.portfolio-entry.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada */
-}
-
-/* Imagem/Slider no Card */
-.portfolio-entry .portfolio-slider {
-  height: 100%;
-}
-.portfolio-entry .portfolio-slider img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Cobre a área da imagem */
-}
-/* Remove gutters extras do Bootstrap dentro do card */
-.portfolio-entry .row.g-0 > [class*="col-"] {
-    padding-right: 0;
-    padding-left: 0;
-}
-/* Arredondamento da imagem à esquerda em telas médias+ */
-@media (min-width: 768px) {
-  .portfolio-entry .img-fluid.rounded-start {
-      border-top-left-radius: 0.5rem !important;
-      border-bottom-left-radius: 0.5rem !important;
-      border-top-right-radius: 0 !important; /* Garante que não arredonde do lado errado */
-  }
-}
-/* Arredondamento total em telas pequenas */
-@media (max-width: 767px) {
-    .portfolio-entry .img-fluid.rounded-start {
-        border-bottom-left-radius: 0 !important; /* Remove arredondamento inferior */
-        border-top-right-radius: 0.5rem !important; /* Arredonda canto superior direito */
-    }
-}
-
-
-/* Corpo do Card (Conteúdo de Texto) */
-.portfolio-entry .card-body {
-  display: flex;
-  flex-direction: column;
-  padding: 1.5rem; /* Padding interno do card */
-}
-
-.portfolio-entry .portfolio-title {
-  font-size: 1.25rem; /* Equivalente a h4/h3 */
-  font-weight: 700;
-  color: var(--dark-text);
-  margin-bottom: 0.75rem;
-}
-
-/* Badges de Metadados */
-.portfolio-meta .badge {
-  font-size: 0.75rem;
-  font-weight: 500;
-  padding: 0.4em 0.8em;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-.portfolio-meta .bg-primary { background-color: var(--primary-color) !important; }
-.portfolio-meta .bg-success { background-color: #198754 !important; }
-.portfolio-meta .bg-warning { background-color: #ffc107 !important; }
-.portfolio-meta .bg-info { background-color: #0dcaf0 !important; }
-.portfolio-meta .bg-secondary { background-color: #6c757d !important; }
-
-
-/* Preview da Descrição */
-.portfolio-entry .description-preview {
-  font-size: 0.95rem;
-  color: var(--secondary-color);
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-
-/* Detalhes (Equipe, Links, etc.) */
-.portfolio-entry .portfolio-details {
-  font-size: 0.85rem;
-  color: var(--secondary-color);
-  margin-top: auto; /* Empurra para o fundo do card */
-}
-.portfolio-entry .portfolio-details hr {
-  margin-top: 1rem;
-  margin-bottom: 0.75rem;
-  border-top: 1px solid #eee;
-}
-.portfolio-entry .portfolio-details p {
-  margin-bottom: 0.3rem;
-}
-.portfolio-entry .portfolio-details p strong {
-  color: var(--dark-text);
-  font-weight: 600;
-}
-.portfolio-entry .portfolio-details a {
-  color: var(--primary-color);
-  font-weight: 500;
-}
-.portfolio-entry .portfolio-details a:hover {
-  color: var(--primary-hover-color);
-}
-
-/* Paginação do Swiper (se aplicável) */
-.portfolio-entry .swiper-pagination {
-    bottom: 15px !important;
-}
-.portfolio-entry .swiper-pagination .swiper-pagination-bullet {
-  background-color: rgba(255, 255, 255, 0.7);
+.portfolio-showcase .swiper-pagination-bullet-active {
   opacity: 1;
 }
-.portfolio-entry .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--primary-color);
+.portfolio-showcase .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure card body takes full height */
+}
+.portfolio-showcase .portfolio-details {
+    margin-top: auto; /* Pushes details to the bottom */
+}
+.portfolio-showcase .portfolio-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+.portfolio-showcase .description-preview {
+    font-size: 0.95rem;
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+ .portfolio-showcase .portfolio-meta .badge {
+    font-size: 0.8rem;
+    padding: 0.4em 0.7em;
+}
+ .portfolio-showcase .portfolio-details hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+ .portfolio-showcase .portfolio-details p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+ .portfolio-showcase .portfolio-details strong {
+    color: var(--dark-text);
+}
+ .portfolio-showcase .portfolio-details a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+ .portfolio-showcase .portfolio-details a:hover {
+    color: var(--primary-hover-color);
+    text-decoration: underline;
 }
 
-/* Responsividade Adicional */
+ /* Adjust slider height on smaller screens if needed */
 @media (max-width: 767px) {
-  .portfolio-entry .row.g-0 > .col-md-6:first-child .portfolio-slider img {
-      min-height: 200px; /* Ajuste a altura mínima para imagens pequenas no mobile */
+  .portfolio-showcase .portfolio-slider img {
+    max-height: 250px;
   }
-  .portfolio-entry .card-body {
-      padding: 1rem; /* Menos padding em telas pequenas */
+  .portfolio-showcase .portfolio-title {
+      font-size: 1.2rem;
   }
-  .portfolio-title {
-    font-size: 1.1rem;
-  }
+}
+.portfolio-showcase .portfolio-meta {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.portfolio-showcase .portfolio-meta .badge {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-right: 0.5em;
 }
