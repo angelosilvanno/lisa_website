@@ -26,15 +26,15 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <!-- CSS específico para Portfolio (se necessário) -->
-  <!-- <link href="assets/css/portfolio.css" rel="stylesheet"> -->
+  
+  <link href="assets/css/portfolio.css" rel="stylesheet"> 
 
 </head>
 
-<body class="portfolio-page"> <!-- Classe adicionada para estilização específica -->
+<body> <!-- Removida a classe específica do body, controlaremos pelo header -->
 
   <!-- ======= Header ======= -->
-  <!-- Header agora usa 'header-light' para fundo branco e texto escuro por padrão nesta página -->
+  <!-- Adicionada classe 'header-light' para fundo branco nesta página -->
   <header id="header" class="fixed-top d-flex align-items-center header-light">
     <div class="container d-flex align-items-center justify-content-between">
 
@@ -60,190 +60,190 @@
 
   <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Portfólio</h2>
-          <ol>
-            <li><a href="index.html">Início</a></li>
-            <li>Portfólio</li>
-          </ol>
+      <!-- ======= Breadcrumbs ======= -->
+      <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <h2>Portfólio</h2> <!-- Título principal à esquerda -->
+            <ol>
+              <li><a href="index.html">Home</a></li> 
+              <li>Portfólio</li> 
+            </ol>
+          </div>
         </div>
-      </div>
-    </section><!-- End Breadcrumbs -->
+      </section><!-- End Breadcrumbs -->
 
     <!-- ======= Seção Principal do Portfólio ======= -->
     <section id="portfolio-showcase" class="portfolio-showcase section-bg">
-      <div class="container" data-aos="fade-up">
+       <div class="container" data-aos="fade-up">
 
         <div class="section-title text-center" data-aos="fade-up">
           <h2>Nossos Projetos</h2>
           <p>Conheça alguns dos projetos de pesquisa, extensão e ensino desenvolvidos no LISA.</p>
         </div>
 
-        <div class="row gy-5"> <!-- gy-5 adiciona mais espaço vertical entre as linhas de cards -->
+        <div class="row gy-5">
 
-          <!-- Projeto 1: Fissuras -->
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-            <div class="portfolio-entry card shadow-sm">
-              <div class="row g-0">
-                <div class="col-md-6"> <!-- Imagem ocupa metade em telas médias/grandes -->
-                  <div class="portfolio-slider swiper h-100">
-                    <div class="swiper-wrapper align-items-center">
-                      <div class="swiper-slide"><img src="assets/img/portfolio/imagem1.png" class="img-fluid rounded-start" alt="Detecção de Fissuras - Imagem 1"></div>
-                      <div class="swiper-slide"><img src="assets/img/portfolio/imagem1.1.png" class="img-fluid rounded-start" alt="Detecção de Fissuras - Imagem 2"></div>
+            <!-- Projeto 1: Fissuras -->
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="portfolio-entry card shadow-sm">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <div class="portfolio-slider swiper h-100">
+                                <div class="swiper-wrapper align-items-center">
+                                <div class="swiper-slide"><img src="assets/img/portfolio/imagem1.png" class="img-fluid rounded-start" alt="Detecção de Fissuras - Imagem 1"></div>
+                                <div class="swiper-slide"><img src="assets/img/portfolio/imagem1.1.png" class="img-fluid rounded-start" alt="Detecção de Fissuras - Imagem 2"></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column">
+                            <div class="card-body">
+                                <h3 class="card-title portfolio-title">Estudo e Aplicação de Algoritmos de Aprendizado de Máquina para Detecção de Fissuras</h3>
+                                <div class="portfolio-meta mb-3">
+                                <span class="badge bg-primary me-2">Pesquisa</span>
+                                <span class="badge bg-success">Concluído</span>
+                                </div>
+                                <p class="card-text description-preview">Exploração de técnicas de IA, como CNNs, para identificar fissuras em concreto, visando a detecção precoce e a manutenção preventiva em construções civis.</p>
+                                <div class="portfolio-details mt-auto">
+                                <hr>
+                                <p><strong>Equipe:</strong> Coord.: Rosana Cibely B. Rego; Integrantes: Paulo H. A. Bezerra; Letícia M. G. Morais; Heitor C. Dantas.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="swiper-pagination"></div>
-                  </div>
                 </div>
-                <div class="col-md-6 d-flex flex-column"> <!-- Texto ocupa a outra metade -->
-                  <div class="card-body">
-                    <h3 class="card-title portfolio-title">Estudo e Aplicação de Algoritmos de Aprendizado de Máquina para Detecção de Fissuras</h3>
-                    <div class="portfolio-meta mb-3">
-                      <span class="badge bg-primary me-2">Pesquisa</span>
-                      <span class="badge bg-success">Concluído</span>
+            </div><!-- Fim Projeto 1 -->
+
+
+            <!-- Projeto 2: Hipotireoidismo -->
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="portfolio-entry card shadow-sm">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                    <div class="portfolio-slider swiper h-100">
+                        <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide"><img src="assets/img/portfolio/imagem2.png" class="img-fluid rounded-start" alt="Diagnóstico Hipotireoidismo - Imagem 1"></div>
+                        <div class="swiper-slide"><img src="assets/img/portfolio/imagem2.1.png" class="img-fluid rounded-start" alt="Diagnóstico Hipotireoidismo - Imagem 2"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <p class="card-text description-preview">Exploração de técnicas de IA, como CNNs, para identificar fissuras em concreto, visando a detecção precoce...</p>
-                    <div class="portfolio-details mt-auto"> <!-- Alinha detalhes na parte inferior -->
-                      <hr>
-                      <p><strong>Equipe:</strong> Coord.: Rosana Cibely B. Rego; Integrantes: Paulo H. A. Bezerra; Letícia M. G. Morais; Heitor C. Dantas.</p>
-                      <!-- <a href="#" class="btn btn-sm btn-outline-primary">Ver Mais</a> -->
                     </div>
-                  </div>
+                    <div class="col-md-6 d-flex flex-column">
+                    <div class="card-body">
+                        <h3 class="card-title portfolio-title">Diagnóstico de Hipotireoidismo com Inteligência Artificial Explicável</h3>
+                        <div class="portfolio-meta mb-3">
+                        <span class="badge bg-primary me-2">Pesquisa</span>
+                        <span class="badge bg-success">Concluído</span>
+                        </div>
+                        <p class="card-text description-preview">Desenvolvimento de um modelo de IA para auxiliar no diagnóstico de hipotireoidismo a partir de exames de sangue, com foco na explicabilidade das decisões do modelo.</p>
+                        <div class="portfolio-details mt-auto">
+                        <hr>
+                        <p><strong>Equipe:</strong> Coord.: Rosana Cibely B. Rego; Integrante: Caio Moises V. Cavalcante.</p>
+                        <p><strong>Financiador:</strong> UFERSA</p>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div><!-- Fim Projeto 1 -->
-
-          <!-- Projeto 2: Hipotireoidismo -->
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-            <div class="portfolio-entry card shadow-sm">
-              <div class="row g-0">
-                <div class="col-md-6">
-                  <div class="portfolio-slider swiper h-100">
-                    <div class="swiper-wrapper align-items-center">
-                      <div class="swiper-slide"><img src="assets/img/portfolio/imagem2.png" class="img-fluid rounded-start" alt="Diagnóstico Hipotireoidismo - Imagem 1"></div>
-                      <div class="swiper-slide"><img src="assets/img/portfolio/imagem2.1.png" class="img-fluid rounded-start" alt="Diagnóstico Hipotireoidismo - Imagem 2"></div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                  </div>
                 </div>
-                <div class="col-md-6 d-flex flex-column">
-                  <div class="card-body">
-                    <h3 class="card-title portfolio-title">Diagnóstico de Hipotireoidismo com Inteligência Artificial Explicável</h3>
-                    <div class="portfolio-meta mb-3">
-                      <span class="badge bg-primary me-2">Pesquisa</span>
-                      <span class="badge bg-success">Concluído</span>
+            </div><!-- Fim Projeto 2 -->
+
+
+            <!-- Projeto 3: Rota-UFERSA -->
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="portfolio-entry card shadow-sm">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                    <div class="portfolio-slider swiper h-100">
+                        <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide"><img src="assets/img/portfolio/imagem3.png" class="img-fluid rounded-start" alt="Rota UFERSA - Imagem 1"></div>
+                        <div class="swiper-slide"><img src="assets/img/portfolio/imagem3.1.png" class="img-fluid rounded-start" alt="Rota UFERSA - Imagem 2"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <p class="card-text description-preview">Desenvolvimento de um modelo de IA para auxiliar no diagnóstico de hipotireoidismo a partir de exames de sangue...</p>
-                    <div class="portfolio-details mt-auto">
-                      <hr>
-                      <p><strong>Equipe:</strong> Coord.: Rosana Cibely B. Rego; Integrante: Caio Moises V. Cavalcante.</p>
-                      <p><strong>Financiador:</strong> UFERSA</p>
-                      <!-- <a href="#" class="btn btn-sm btn-outline-primary">Ver Mais</a> -->
                     </div>
-                  </div>
+                    <div class="col-md-6 d-flex flex-column">
+                    <div class="card-body">
+                        <h3 class="card-title portfolio-title">Rota-UFERSA</h3>
+                        <div class="portfolio-meta mb-3">
+                        <span class="badge bg-primary me-2">Pesquisa</span>
+                        <span class="badge bg-warning text-dark">Em Execução</span>
+                        </div>
+                        <p class="card-text description-preview">Aplicativo que disponibiliza informações em tempo real sobre o trajeto do ônibus da UFERSA em Pau dos Ferros-RN.</p>
+                        <div class="portfolio-details mt-auto">
+                        <hr>
+                        <p><strong>Equipe:</strong> Coord.: Walber José Adriano Silva.</p>
+                        <p><strong>Link:</strong> <a href="https://rota.ufersa.dev.br/" target="_blank" rel="noopener noreferrer">Acessar Aplicativo</a></p>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div><!-- Fim Projeto 2 -->
-
-          <!-- Projeto 3: Rota-UFERSA -->
-           <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-             <div class="portfolio-entry card shadow-sm">
-               <div class="row g-0">
-                 <div class="col-md-6">
-                   <div class="portfolio-slider swiper h-100">
-                     <div class="swiper-wrapper align-items-center">
-                       <div class="swiper-slide"><img src="assets/img/portfolio/imagem3.png" class="img-fluid rounded-start" alt="Rota UFERSA - Imagem 1"></div>
-                       <div class="swiper-slide"><img src="assets/img/portfolio/imagem3.1.png" class="img-fluid rounded-start" alt="Rota UFERSA - Imagem 2"></div>
-                     </div>
-                     <div class="swiper-pagination"></div>
-                   </div>
-                 </div>
-                 <div class="col-md-6 d-flex flex-column">
-                   <div class="card-body">
-                     <h3 class="card-title portfolio-title">Rota-UFERSA</h3>
-                     <div class="portfolio-meta mb-3">
-                       <span class="badge bg-primary me-2">Pesquisa</span>
-                       <span class="badge bg-warning text-dark">Em Execução</span>
-                     </div>
-                     <p class="card-text description-preview">Aplicativo que disponibiliza informações em tempo real sobre o trajeto do ônibus da UFERSA em Pau dos Ferros-RN.</p>
-                     <div class="portfolio-details mt-auto">
-                       <hr>
-                       <p><strong>Equipe:</strong> Coord.: Walber José Adriano Silva.</p>
-                       <p><strong>Link:</strong> <a href="https://rota.ufersa.dev.br/" target="_blank" rel="noopener noreferrer">Acessar Aplicativo</a></p>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div><!-- Fim Projeto 3 -->
+                </div>
+            </div><!-- Fim Projeto 3 -->
 
 
-           <!-- Projeto 4: Carcará -->
-           <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-             <div class="portfolio-entry card shadow-sm">
-               <div class="row g-0">
-                 <div class="col-md-6">
-                   <div class="portfolio-slider swiper h-100">
-                     <div class="swiper-wrapper align-items-center">
-                       <div class="swiper-slide"><img src="assets/img/portfolio/imagem4.png" class="img-fluid rounded-start" alt="Projeto Carcará"></div>
-                     </div>
-                     <div class="swiper-pagination"></div>
-                   </div>
-                 </div>
-                 <div class="col-md-6 d-flex flex-column">
-                   <div class="card-body">
-                     <h3 class="card-title portfolio-title">Carcará</h3>
-                     <div class="portfolio-meta mb-3">
-                       <span class="badge bg-primary me-2">Pesquisa</span>
-                       <span class="badge bg-warning text-dark">Em Execução</span>
-                     </div>
-                     <p class="card-text description-preview">Proposição de soluções para melhoria da qualidade da infraestrutura de TI da UFERSA, Campus Pau dos Ferros...</p>
-                     <div class="portfolio-details mt-auto">
-                       <hr>
-                       <p><strong>Equipe:</strong> Coord.: Reudismam Rolim de Sousa; Vice-Coord.: Walber José Adriano Silva.</p>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div><!-- Fim Projeto 4 -->
+            <!-- Projeto 4: Carcará -->
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="portfolio-entry card shadow-sm">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                    <div class="portfolio-slider swiper h-100">
+                        <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide"><img src="assets/img/portfolio/imagem4.png" class="img-fluid rounded-start" alt="Projeto Carcará"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    </div>
+                    <div class="col-md-6 d-flex flex-column">
+                    <div class="card-body">
+                        <h3 class="card-title portfolio-title">Carcará</h3>
+                        <div class="portfolio-meta mb-3">
+                        <span class="badge bg-primary me-2">Pesquisa</span>
+                        <span class="badge bg-warning text-dark">Em Execução</span>
+                        </div>
+                        <p class="card-text description-preview">Proposição de soluções para melhoria da qualidade da infraestrutura de TI da UFERSA, Campus Pau dos Ferros, alinhado ao Plano de Desenvolvimento de TI da universidade.</p>
+                        <div class="portfolio-details mt-auto">
+                        <hr>
+                        <p><strong>Equipe:</strong> Coord.: Reudismam Rolim de Sousa; Vice-Coord.: Walber José Adriano Silva.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div><!-- Fim Projeto 4 -->
 
-           <!-- Projeto 5: Quero Água -->
-           <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-             <div class="portfolio-entry card shadow-sm">
-               <div class="row g-0">
-                 <div class="col-md-6">
-                   <div class="portfolio-slider swiper h-100">
-                     <div class="swiper-wrapper align-items-center">
-                       <div class="swiper-slide"><img src="assets/img/portfolio/projeto6.png" class="img-fluid rounded-start" alt="Projeto Quero Água"></div>
-                     </div>
-                     <div class="swiper-pagination"></div>
-                   </div>
-                 </div>
-                 <div class="col-md-6 d-flex flex-column">
-                   <div class="card-body">
-                     <h3 class="card-title portfolio-title">Quero Água</h3>
-                     <div class="portfolio-meta mb-3">
-                       <span class="badge bg-info me-2">Extensão</span>
-                       <span class="badge bg-secondary">Planejamento</span>
-                     </div>
-                     <p class="card-text description-preview">Desenvolvimento de um sistema web e/ou mobile para facilitar a solicitação e entrega de água mineral no varejo.</p>
-                     <div class="portfolio-details mt-auto">
-                       <hr>
-                       <p><strong>Equipe:</strong> Docente: Walber José A. Silva; Integrantes: Vinicius A. Almeida; Ruan P. B. Claudino; Vitor T. Andrade; Wallacy B. Fernandes.</p>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div><!-- Fim Projeto 5 -->
 
-            <!-- ... Repetir a estrutura para os demais projetos ... -->
-            <!-- Adapte o conteúdo (título, badges, descrição, equipe, imagem) para cada projeto -->
+            <!-- Projeto 5: Quero Água -->
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="portfolio-entry card shadow-sm">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                    <div class="portfolio-slider swiper h-100">
+                        <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide"><img src="assets/img/portfolio/projeto6.png" class="img-fluid rounded-start" alt="Projeto Quero Água"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    </div>
+                    <div class="col-md-6 d-flex flex-column">
+                    <div class="card-body">
+                        <h3 class="card-title portfolio-title">Quero Água</h3>
+                        <div class="portfolio-meta mb-3">
+                        <span class="badge bg-info me-2">Extensão</span>
+                        <span class="badge bg-secondary">Planejamento</span>
+                        </div>
+                        <p class="card-text description-preview">Desenvolvimento de um sistema web e/ou mobile para facilitar a solicitação e entrega de água mineral no varejo.</p>
+                        <div class="portfolio-details mt-auto">
+                        <hr>
+                        <p><strong>Equipe:</strong> Docente: Walber José A. Silva; Integrantes: Vinicius A. Almeida; Ruan P. B. Claudino; Vitor T. Andrade; Wallacy B. Fernandes.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div><!-- Fim Projeto 5 -->
+
+            <!-- ... (Repita para os outros projetos) ... -->
 
              <!-- Projeto 31: EduBolsas (Exemplo Final) -->
             <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
@@ -252,7 +252,7 @@
                     <div class="col-md-6">
                     <div class="portfolio-slider swiper h-100">
                         <div class="swiper-wrapper align-items-center">
-                        <div class="swiper-slide"><img src="assets/img/portfolio/projeto31.png" class="img-fluid rounded-start" alt="EduBolsas"></div>
+                        <div class="swiper-slide"><img src="assets/img/portfolio/projeto31.png" class="img-fluid rounded-start" alt="EduBolsas - Sistema de Gerenciamento de Bolsistas"></div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
@@ -264,7 +264,7 @@
                         <span class="badge bg-primary me-2">Pesquisa</span>
                         <span class="badge bg-success">Concluído</span>
                         </div>
-                        <p class="card-text description-preview">Implementação de um sistema web (React/Django) para gerenciamento eficaz e confiável de bolsas acadêmicas...</p>
+                        <p class="card-text description-preview">Implementação de um sistema web (React/Django) para gerenciamento eficaz e confiável de bolsas acadêmicas, incluindo geração de relatórios.</p>
                         <div class="portfolio-details mt-auto">
                         <hr>
                         <p><strong>Equipe:</strong> Ferdinandy Chagas; Luiz Felipe Alvez Pereira.</p>
@@ -275,7 +275,6 @@
                 </div>
             </div><!-- Fim Projeto 31 -->
 
-
         </div> <!-- Fim da .row -->
 
       </div>
@@ -284,46 +283,46 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-      <div class="container">
-          <!-- Conteúdo do Footer Mantido -->
-          <div class="footer-top pb-4">
-              <div class="row gy-4">
-                  <div class="col-lg-6 col-md-6 footer-info">
-                       <a href="index.html" class="logo d-flex align-items-center mb-3 text-white text-decoration-none">
-                          <span style="font-size: 24px; font-weight: 600;">LISA</span>
-                       </a>
-                       <p>Laboratório de Inovação em Software e Automação.</p>
-                      <div class="social-links mt-3">
-                          <a href="https://www.instagram.com/lisa.ufersa/" target="_blank" rel="noopener noreferrer" class="instagram"><i class="bx bxl-instagram"></i></a>
-                          <a href="https://github.com/lisa-ufersa" target="_blank" rel="noopener noreferrer" class="github"><i class="bx bxl-github"></i></a>
-                      </div>
-                  </div>
-                  <div class="col-lg-3 col-6 footer-links">
-                      <h4>Institucional</h4>
-                      <ul class="list-unstyled">
-                          <li><i class="bx bx-chevron-right"></i> <a href="./index.html#hero" class="text-decoration-none scrollto">Início</a></li>
-                          <li><i class="bx bx-chevron-right"></i> <a href="./index.html#about" class="text-decoration-none scrollto">Sobre</a></li>
-                          <li><i class="bx bx-chevron-right"></i> <a href="./index.html#services" class="text-decoration-none scrollto">Serviços</a></li>
-                          <li><i class="bx bx-chevron-right"></i> <a href="https://ufersa.edu.br/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">UFERSA</a></li>
-                      </ul>
-                  </div>
-                  <div class="col-lg-3 col-6 footer-links">
-                      <h4>Nossas Áreas</h4>
-                      <ul class="list-unstyled">
-                           <li><i class="bx bx-chevron-right"></i> <a href="./index.html#services" class="text-decoration-none scrollto">Automação</a></li>
-                           <li><i class="bx bx-chevron-right"></i> <a href="./index.html#services" class="text-decoration-none scrollto">Inteligência Artificial</a></li>
-                           <li><i class="bx bx-chevron-right"></i> <a href="./index.html#services" class="text-decoration-none scrollto">Web & Mobile</a></li>
-                           <li><i class="bx bx-chevron-right"></i> <a href="./index.html#services" class="text-decoration-none scrollto">IoT</a></li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-           <div class="copyright pt-3 mt-3 border-top border-secondary border-opacity-25">
-               © <strong><span>LISA/UFERSA</span></strong>. Todos os direitos reservados.
-          </div>
-      </div>
-  </footer><!-- End Footer -->
+   <footer id="footer">
+       <div class="container">
+           <!-- Conteúdo do Footer Mantido -->
+           <div class="footer-top pb-4">
+               <div class="row gy-4">
+                   <div class="col-lg-6 col-md-6 footer-info">
+                        <a href="index.html" class="logo d-flex align-items-center mb-3 text-white text-decoration-none">
+                           <span style="font-size: 24px; font-weight: 600;">LISA</span>
+                        </a>
+                        <p>Laboratório de Inovação em Software e Automação.</p>
+                       <div class="social-links mt-3">
+                           <a href="https://www.instagram.com/lisa.ufersa/" target="_blank" rel="noopener noreferrer" class="instagram"><i class="bx bxl-instagram"></i></a>
+                           <a href="https://github.com/lisa-ufersa" target="_blank" rel="noopener noreferrer" class="github"><i class="bx bxl-github"></i></a>
+                       </div>
+                   </div>
+                   <div class="col-lg-3 col-6 footer-links">
+                       <h4>Institucional</h4>
+                       <ul class="list-unstyled">
+                           <li><i class="bx bx-chevron-right"></i> <a href="./index.html#hero" class="text-decoration-none scrollto">Início</a></li>
+                           <li><i class="bx bx-chevron-right"></i> <a href="./index.html#about" class="text-decoration-none scrollto">Sobre</a></li>
+                           <li><i class="bx bx-chevron-right"></i> <a href="./index.html#services" class="text-decoration-none scrollto">Serviços</a></li>
+                           <li><i class="bx bx-chevron-right"></i> <a href="https://ufersa.edu.br/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">UFERSA</a></li>
+                       </ul>
+                   </div>
+                   <div class="col-lg-3 col-6 footer-links">
+                       <h4>Nossas Áreas</h4>
+                       <ul class="list-unstyled">
+                            <li><i class="bx bx-chevron-right"></i> <a href="./index.html#services" class="text-decoration-none scrollto">Automação</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="./index.html#services" class="text-decoration-none scrollto">Inteligência Artificial</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="./index.html#services" class="text-decoration-none scrollto">Web & Mobile</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="./index.html#services" class="text-decoration-none scrollto">IoT</a></li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+            <div class="copyright pt-3 mt-3 border-top border-secondary border-opacity-25">
+                © <strong><span>LISA/UFERSA</span></strong>. Todos os direitos reservados.
+           </div>
+       </div>
+   </footer><!-- End Footer -->
 
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
