@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Details - Seleção Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Portfólio - LISA</title>
+  <meta name="description" content="Portfólio de projetos do Laboratório de Inovação em Software e Automação (LISA), UFERSA/Pau dos Ferros-RN.">
+  <meta content="LISA, UFERSA, Portfólio, Projetos, Pesquisa, Extensão, Software, Automação" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/lisa.png" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -26,69 +24,33 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <!-- CSS específico para Portfolio (se necessário) -->
+  <!-- <link href="assets/css/portfolio.css" rel="stylesheet"> -->
 
-  <style>
-        .descricao {
-        overflow: hidden;
-        max-height: 100px; /* Altura inicial */
-        transition: max-height 0.3s ease;
-      }
-
-      .lerMaisBtn {
-        margin-top: 10px;
-        cursor: pointer;
-      }
-  </style>
-
-  <!-- =======================================================
-  * Template Name: Selecao
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
-<body>
+<body class="portfolio-page"> <!-- Classe adicionada para estilização específica -->
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center ">
+  <!-- Header agora usa 'header-light' para fundo branco e texto escuro por padrão nesta página -->
+  <header id="header" class="fixed-top d-flex align-items-center header-light">
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1><a href="index.html">Seleção</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <h1><a href="index.html">LISA</a></h1>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="./index.html#hero">Início</a></li>
+          <li><a class="nav-link scrollto" href="./index.html#about">Sobre</a></li>
+          <li><a class="nav-link scrollto" href="./index.html#services">Áreas de Atuação</a></li>
+          <li><a class="nav-link scrollto" href="./index.html#team">Equipe</a></li>
+          <li><a class="nav-link scrollto active" href="./portfolio-details.html">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="./index.html#faq">FAQ</a></li>
+          <li><a class="nav-link scrollto" href="./index.html#contact">Contato</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -101,1507 +63,271 @@
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
-
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Portfolio Details</h2>
+          <h2>Portfólio</h2>
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Portfolio Details</li>
+            <li><a href="index.html">Início</a></li>
+            <li>Portfólio</li>
           </ol>
         </div>
-
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
+    <!-- ======= Seção Principal do Portfólio ======= -->
+    <section id="portfolio-showcase" class="portfolio-showcase section-bg">
+      <div class="container" data-aos="fade-up">
 
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/imagem1.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/imagem1.1.png" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Estudo e Aplicação de Algoritmos de Aprendizado de Máquina para Detecção de Fissuras.</h3>
-              <ul>
-                <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-                <li><strong>Equipe Participante: </strong> <br> 
-                  Coordenador(a): Rosana Cibely Batista Rego. <br>
-                  Integrantes: Paulo Henrique Araujo Bezerra; 
-                  Letícia M. G. Morais;
-                  Heitor Claudino Dantas.</li>
-                <li><strong>Status do Projeto:</strong> Concluído</li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>Descrição</h2>
-              <p class="descricao">
-                Um dos materiais amplamente utilizado na construção civil é o concreto. Isso porque ele possui uma alta resistência e durabilidade (RIBEIRO, 2002). Entretanto, ele pode estar susceptível a alguns problemas, como por exemplo, a fissura (ROCHA et al., 2017). As fissuras são aberturas que se formam na superfície ou no interior das estruturas de concreto. Geralmente, elas não representam um risco imediato, mas devem ser monitoradas e, se necessário, reparadas para evitar que se agravem e comprometam a integridade estrutural (HOANG, 2018). Além disso, por vezes não é possível detectar fissuras em estágio inicial ou em construções de difícil acesso. Algumas fissuras podem se desenvolver em áreas ocultas ou de difícil visualização, tornando-as difíceis de serem notadas a olho nu ou com inspeções visuais simples (ZAWAD et al, 2021). Neste contexto, os algoritmos de inteligência artificial (IA) e deep learning podem ser utilizados auxiliar na inspeção visual para identificar fissuras em estágios iniciais de desenvolvimento, antes que se torne problemas graves, permitindo assim que medidas corretivas sejam tomadas com antecedência (DENG et al., 2022). Os modelos de IA, especialmente as redes neurais convolucionais (CNN) que foram projetadas para processamento e análise de imagens e vídeos, podem ser aplicadas para o reconhecimento de fissuras na construção (ZHOU et al., 2023). As CNNs têm demonstrado um bom desempenho em várias tarefas de visão computacional (ZHOU et al., 2023) e estão sendo aplicadas em muitas outras áreas, como processamento de linguagem natural (REGO et al., 2023), reconhecimento de fala (HOURRI e NIKOLOV, 2021), entre outros. Portanto, esse projeto busca explorar e realizar o levantamento das técnicas de inteligência artificial para o reconhecimento preciso e eficiente de fissuras. Isso envolve o desenvolvimento de modelos de aprendizado de máquinas capazes de processar as imagens das construções e identificar a existência ou não de fissuras..
-              </p>
-            </div>
-          </div>
-
+        <div class="section-title text-center" data-aos="fade-up">
+          <h2>Nossos Projetos</h2>
+          <p>Conheça alguns dos projetos de pesquisa, extensão e ensino desenvolvidos no LISA.</p>
         </div>
 
-      </div>
-    </section><!-- End Portfolio Details Section -->
+        <div class="row gy-5"> <!-- gy-5 adiciona mais espaço vertical entre as linhas de cards -->
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/imagem2.png" alt="">
+          <!-- Projeto 1: Fissuras -->
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-entry card shadow-sm">
+              <div class="row g-0">
+                <div class="col-md-6"> <!-- Imagem ocupa metade em telas médias/grandes -->
+                  <div class="portfolio-slider swiper h-100">
+                    <div class="swiper-wrapper align-items-center">
+                      <div class="swiper-slide"><img src="assets/img/portfolio/imagem1.png" class="img-fluid rounded-start" alt="Detecção de Fissuras - Imagem 1"></div>
+                      <div class="swiper-slide"><img src="assets/img/portfolio/imagem1.1.png" class="img-fluid rounded-start" alt="Detecção de Fissuras - Imagem 2"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
                 </div>
-                
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/imagem2.1.png" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Diagnostico de Hipotireoidismo com Inteligência Artificial Explicável.</h3>
-              <ul>
-                <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-                <li><strong>Equipe Participante: </strong> <br>
-                  Coordenador(a): Rosana Cibely Batista Rego;<br>
-                  Integrante: Caio Moises Vieira Cavalcante;<br>
-                  Financiador(es): Universidade Federal Rural do Semi-Árido</li>
-                <li><strong>Status do Projeto:</strong> Concluído</li>
-                <li><strong>Project URL</strong>: <a href="#"></a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>Descrição</h2>
-              <p class="descricao">
-                O hipotireoidismo é uma doença que afeta a tireoide, uma glândula localizada no pescoço, responsável por produzir hormônios que regulam o metabolismo do corpo. O diagnóstico precoce é fundamental para o tratamento da doença, que pode ser feito por meio de exames de sangue. O objetivo deste projeto é desenvolver um modelo de inteligência artificial que possa auxiliar no diagnóstico de hipotireoidismo, utilizando dados de exames de sangue. Além disso, o modelo deve ser capaz de explicar suas decisões, de forma a fornecer informações sobre os fatores que influenciaram o diagnóstico.
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Details Section -->
-
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/imagem3.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/imagem3.1.png" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Rota-UFERSA</h3>
-              <ul>
-                <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-                <li><strong>Equipe Participante: </strong> <br> 
-                  Coordenador(a): Walber José Adriano Silva.
-                  <li><strong>Status do Projeto:</strong> Execução</li>
-                <li><strong>Link do aplicativo:</strong> <a href="#">https://rota.ufersa.dev.br/</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>Descrição</h2>
-              <p class="descricao">
-                Rota - UFERSA é o aplicativo que disponibiliza às informações do trajeto do ônibus da UFERSA em Pau dos Ferros-RN.
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section><!-- End Portfolio Details Section -->
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/imagem4.png" alt="">
+                <div class="col-md-6 d-flex flex-column"> <!-- Texto ocupa a outra metade -->
+                  <div class="card-body">
+                    <h3 class="card-title portfolio-title">Estudo e Aplicação de Algoritmos de Aprendizado de Máquina para Detecção de Fissuras</h3>
+                    <div class="portfolio-meta mb-3">
+                      <span class="badge bg-primary me-2">Pesquisa</span>
+                      <span class="badge bg-success">Concluído</span>
+                    </div>
+                    <p class="card-text description-preview">Exploração de técnicas de IA, como CNNs, para identificar fissuras em concreto, visando a detecção precoce...</p>
+                    <div class="portfolio-details mt-auto"> <!-- Alinha detalhes na parte inferior -->
+                      <hr>
+                      <p><strong>Equipe:</strong> Coord.: Rosana Cibely B. Rego; Integrantes: Paulo H. A. Bezerra; Letícia M. G. Morais; Heitor C. Dantas.</p>
+                      <!-- <a href="#" class="btn btn-sm btn-outline-primary">Ver Mais</a> -->
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
             </div>
-          </div>
+          </div><!-- Fim Projeto 1 -->
 
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Caracará</h3>
-              <ul>
-                <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-                <li><strong>Equipe Participante: </strong> <br> 
-                  Coordenador(a):Reudismam Rolim de Sousa;<br>
-                  Vice-Coordenador(a): Walber José Adriano Silva.
-                  <li><strong>Status do Projeto:</strong> Execução</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>Descrição</h2>
-              <p id="descricao">
-                Proposições de soluções para melhoria da qualidade da infraestrutura de TI da Universidade Federal Rural do Semi-Árido (UFERSA), em especial do Campus Pau dos Ferros, tendo como norte o Plano de Desenvolvimento de Tecnologia da Informação da UFERSA.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Portfolio Details Section -->
-
-    <!-- ======= Portfolio Details Section ======= -->
-    <section class="portfolio-details" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/projeto6.png" alt="">
+          <!-- Projeto 2: Hipotireoidismo -->
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-entry card shadow-sm">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <div class="portfolio-slider swiper h-100">
+                    <div class="swiper-wrapper align-items-center">
+                      <div class="swiper-slide"><img src="assets/img/portfolio/imagem2.png" class="img-fluid rounded-start" alt="Diagnóstico Hipotireoidismo - Imagem 1"></div>
+                      <div class="swiper-slide"><img src="assets/img/portfolio/imagem2.1.png" class="img-fluid rounded-start" alt="Diagnóstico Hipotireoidismo - Imagem 2"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <div class="col-md-6 d-flex flex-column">
+                  <div class="card-body">
+                    <h3 class="card-title portfolio-title">Diagnóstico de Hipotireoidismo com Inteligência Artificial Explicável</h3>
+                    <div class="portfolio-meta mb-3">
+                      <span class="badge bg-primary me-2">Pesquisa</span>
+                      <span class="badge bg-success">Concluído</span>
+                    </div>
+                    <p class="card-text description-preview">Desenvolvimento de um modelo de IA para auxiliar no diagnóstico de hipotireoidismo a partir de exames de sangue...</p>
+                    <div class="portfolio-details mt-auto">
+                      <hr>
+                      <p><strong>Equipe:</strong> Coord.: Rosana Cibely B. Rego; Integrante: Caio Moises V. Cavalcante.</p>
+                      <p><strong>Financiador:</strong> UFERSA</p>
+                      <!-- <a href="#" class="btn btn-sm btn-outline-primary">Ver Mais</a> -->
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
             </div>
-          </div>
+          </div><!-- Fim Projeto 2 -->
 
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Quero Água</h3>
-              <ul>
-                <li><strong>Tipo do Projeto:</strong> Extensão</li>
-                <li><strong>Equipe Participante: </strong> <br>
-                  Docente: Walber José Adriano Silva;<br> 
-                  Integrantes: Vinicius Anacleto de Almeida; 
-                  Ruan Pabllo Barbosa Claudino; 
-                  Vitor Targino de Andrade; 
-                  Wallacy Batista Fernandes.
-                  <li><strong>Status do Projeto:</strong> Planejamento</li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>Descrição</h2>
-              <p id="descricao">
-                Desenvolvimento de um sistema de entrega de água para o varejo.
-              </p>
-            </div>
-          </div>
+          <!-- Projeto 3: Rota-UFERSA -->
+           <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+             <div class="portfolio-entry card shadow-sm">
+               <div class="row g-0">
+                 <div class="col-md-6">
+                   <div class="portfolio-slider swiper h-100">
+                     <div class="swiper-wrapper align-items-center">
+                       <div class="swiper-slide"><img src="assets/img/portfolio/imagem3.png" class="img-fluid rounded-start" alt="Rota UFERSA - Imagem 1"></div>
+                       <div class="swiper-slide"><img src="assets/img/portfolio/imagem3.1.png" class="img-fluid rounded-start" alt="Rota UFERSA - Imagem 2"></div>
+                     </div>
+                     <div class="swiper-pagination"></div>
+                   </div>
+                 </div>
+                 <div class="col-md-6 d-flex flex-column">
+                   <div class="card-body">
+                     <h3 class="card-title portfolio-title">Rota-UFERSA</h3>
+                     <div class="portfolio-meta mb-3">
+                       <span class="badge bg-primary me-2">Pesquisa</span>
+                       <span class="badge bg-warning text-dark">Em Execução</span>
+                     </div>
+                     <p class="card-text description-preview">Aplicativo que disponibiliza informações em tempo real sobre o trajeto do ônibus da UFERSA em Pau dos Ferros-RN.</p>
+                     <div class="portfolio-details mt-auto">
+                       <hr>
+                       <p><strong>Equipe:</strong> Coord.: Walber José Adriano Silva.</p>
+                       <p><strong>Link:</strong> <a href="https://rota.ufersa.dev.br/" target="_blank" rel="noopener noreferrer">Acessar Aplicativo</a></p>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div><!-- Fim Projeto 3 -->
 
-        </div>
 
-      </div>
-    </section><!-- End Portfolio Details Section -->
+           <!-- Projeto 4: Carcará -->
+           <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+             <div class="portfolio-entry card shadow-sm">
+               <div class="row g-0">
+                 <div class="col-md-6">
+                   <div class="portfolio-slider swiper h-100">
+                     <div class="swiper-wrapper align-items-center">
+                       <div class="swiper-slide"><img src="assets/img/portfolio/imagem4.png" class="img-fluid rounded-start" alt="Projeto Carcará"></div>
+                     </div>
+                     <div class="swiper-pagination"></div>
+                   </div>
+                 </div>
+                 <div class="col-md-6 d-flex flex-column">
+                   <div class="card-body">
+                     <h3 class="card-title portfolio-title">Carcará</h3>
+                     <div class="portfolio-meta mb-3">
+                       <span class="badge bg-primary me-2">Pesquisa</span>
+                       <span class="badge bg-warning text-dark">Em Execução</span>
+                     </div>
+                     <p class="card-text description-preview">Proposição de soluções para melhoria da qualidade da infraestrutura de TI da UFERSA, Campus Pau dos Ferros...</p>
+                     <div class="portfolio-details mt-auto">
+                       <hr>
+                       <p><strong>Equipe:</strong> Coord.: Reudismam Rolim de Sousa; Vice-Coord.: Walber José Adriano Silva.</p>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div><!-- Fim Projeto 4 -->
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
+           <!-- Projeto 5: Quero Água -->
+           <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+             <div class="portfolio-entry card shadow-sm">
+               <div class="row g-0">
+                 <div class="col-md-6">
+                   <div class="portfolio-slider swiper h-100">
+                     <div class="swiper-wrapper align-items-center">
+                       <div class="swiper-slide"><img src="assets/img/portfolio/projeto6.png" class="img-fluid rounded-start" alt="Projeto Quero Água"></div>
+                     </div>
+                     <div class="swiper-pagination"></div>
+                   </div>
+                 </div>
+                 <div class="col-md-6 d-flex flex-column">
+                   <div class="card-body">
+                     <h3 class="card-title portfolio-title">Quero Água</h3>
+                     <div class="portfolio-meta mb-3">
+                       <span class="badge bg-info me-2">Extensão</span>
+                       <span class="badge bg-secondary">Planejamento</span>
+                     </div>
+                     <p class="card-text description-preview">Desenvolvimento de um sistema web e/ou mobile para facilitar a solicitação e entrega de água mineral no varejo.</p>
+                     <div class="portfolio-details mt-auto">
+                       <hr>
+                       <p><strong>Equipe:</strong> Docente: Walber José A. Silva; Integrantes: Vinicius A. Almeida; Ruan P. B. Claudino; Vitor T. Andrade; Wallacy B. Fernandes.</p>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div><!-- Fim Projeto 5 -->
 
-        <div class="row gy-4">
+            <!-- ... Repetir a estrutura para os demais projetos ... -->
+            <!-- Adapte o conteúdo (título, badges, descrição, equipe, imagem) para cada projeto -->
 
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/projeto7.png" alt="">
+             <!-- Projeto 31: EduBolsas (Exemplo Final) -->
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                <div class="portfolio-entry card shadow-sm">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                    <div class="portfolio-slider swiper h-100">
+                        <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide"><img src="assets/img/portfolio/projeto31.png" class="img-fluid rounded-start" alt="EduBolsas"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    </div>
+                    <div class="col-md-6 d-flex flex-column">
+                    <div class="card-body">
+                        <h3 class="card-title portfolio-title">EduBolsas - Sistema de Gerenciamento de Bolsistas</h3>
+                        <div class="portfolio-meta mb-3">
+                        <span class="badge bg-primary me-2">Pesquisa</span>
+                        <span class="badge bg-success">Concluído</span>
+                        </div>
+                        <p class="card-text description-preview">Implementação de um sistema web (React/Django) para gerenciamento eficaz e confiável de bolsas acadêmicas...</p>
+                        <div class="portfolio-details mt-auto">
+                        <hr>
+                        <p><strong>Equipe:</strong> Ferdinandy Chagas; Luiz Felipe Alvez Pereira.</p>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/projeto7.1.png" alt="">
                 </div>
+            </div><!-- Fim Projeto 31 -->
 
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
 
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Gamificação e Engenharia de Ontologias na Promoção do Bem-estar e Equidade de Gênero em Sistemas de Tutores Inteligentes</h3>
-              <ul>
-                <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-                <li><strong>Equipe Participante: </strong> <br> 
-                  Coordenador(a): Geiser Chalco Challco; <br> 
-                  Docente: Reudismam Rolim De Sousa; <br> 
-                  Integrantes: Alex Bruno Duarte; 
-                  Joao Pedro Medeiros Nogueira Moura;
-                  Maria Alice Ferreira Teixeira; 
-                  Rafael Oliveira Freire; 
-                  Wallacy Batista Fernandes; 
-                  Matheus Nascimento Lodi Gomes;
-                  Wallacy Batista Fernandes;
-                  Wiliane Da Silva Lima.
-                  <li><strong>Status do Projeto:</strong> Execução</li>
-                  
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>Descrição</h2>
-              <p class="descricao">
-                A Inteligência Artificial (IA) na Educação busca integrar a inteligência humana com a IA para aprimorar decisões pedagógicas, personalizar a aprendizagem e facilitar a implementação de novas abordagens pedagógicas. Nesse contexto, os
-                Sistemas de Tutores Inteligentes (STI) são sistemas de computador projetados para interagir com alunos e professores
-                auxiliando-os no processo de ensino-aprendizagem com base nas necessidades individuais dos estudantes. Esses sistemas
-                têm mostrado eficácia na melhoria de resultados educacionais. Entretanto, um desafio recentemente abordado é o cuidado
-                do bem-estar emocional e social dos estudantes.
-                Para conseguir que STI não foquem apenas no aspecto pedagógico, uma abordagem promissora é a gamificação desses
-                sistemas, utilizando elementos de design de jogos que mudem as atitudes, opiniões e comportamentos dos indivíduos
-                mediante a persuasão e divertimento. Entretanto, a escolha inadequada de elementos pode gerar o efeito oposto, afetando
-                negativamente os estudantes. Apesar disso, há ainda poucos estudos que avaliem como estereótipos de gênero presentes nas
-                cores, mensagens e recompensas dos jogos afetam os alunos. Ignorar essa questão pode reforçar preconceitos, promover a
-                autocensura e aumentar as desigualdades. Assim, este projeto de pesquisa busca desenvolver diretrizes e frameworks para
-                criar STI gamificados que promovam tanto o bem-estar quanto a equidade de gênero.
-                Além disso, o bem-estar dos estudantes pode ser compreendido por diferentes teorias da psicologia positiva. A teoria
-                PERMA, por exemplo, enfatiza fatores como emoções positivas, engajamento, relacionamentos, significado e realização,
-                enquanto Carol Ryff sugere que autoaceitação, crescimento pessoal, propósito e autonomia são essenciais. Um grande
-                desafio é fazer que STI integrem essas teorias em sistemas que diagnostiquem e promovam o bem-estar dos estudantes de
-                forma adaptativa. É aqui que a Engenharia de Ontologias se torna crucial, permitindo que os STI representem o
-                conhecimento sobre bem-estar e apliquem essas informações nas suas tomadas de decisões.
-              </p>
-            </div>
-          </div>
-
-        </div>
+        </div> <!-- Fim da .row -->
 
       </div>
-    </section><!-- End Portfolio Details Section -->
-
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/projeto8.png" alt="">
-                </div>
-                
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Projeto de um Jogo Educacional Voltado ao Ensino de Programação</h3>
-              <ul>
-                <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-                <li><strong>Equipe Participante: </strong><br> 
-                  Hercules Janoca Santana Iziderio.
-                  <li><strong>Status do Projeto:</strong> Execução</li> 
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>Descrição</h2>
-              <p class="descricao">
-                Nesse projeto buscamos desenvolver um pequeno robô, juntamente com um aplicativo, que busca ensinar os conceitos de programação para crianças. O objetivo consiste em faz um robô sair do ponto A até o ponto B realizando uma sequência de comandos, que podem ser programados utilizando estruturas de repetição e de decisão.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Portfolio Details Section -->
-
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/projeto9.png" alt="">
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Desenvolvimento de uma Plataforma Web para Consultoria Nutricional e Treinamento Físico</h3>
-          <ul>
-            <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-            <li><strong>Equipe Participante: </strong><br>
-              Alex Bruno Duarte.
-              <li><strong>Status do Projeto:</strong> Planejamento</li>               
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Descrição</h2>
-          <p class="descricao">
-            O projeto consiste em desenvolver uma plataforma web integrada que disponibilize consulta nutricional e treino físico, proporcionando aos utilizadores uma experiência personalizada e acessível e cumprindo requisitos de qualidade, segurança e usabilidade no contexto da saúde digital.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
-
-
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/projeto10.png" alt="">
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Desenvolvimento de uma Vending Machine Inteligente com ESP-32</h3>
-          <ul>
-            <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-            <li><strong>Equipe Participante: </strong><br>
-            Francisco Adrian Vinicius Chaves Sampaio.
-            <li><strong>Status do Projeto:</strong> Execução</li>
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Descrição</h2>
-          <p class="descricao">
-            As Vending Machines As máquinas de vendas automáticas, denominadas também de vending machines, consistem em um produto inovador, permitindo a facilidade e rapidez na aquisição de produtos, disponíveis 24 h por dia e 7 dias na semana. Todavia, grande parte dessas máquinas permitem o pagamento apenas com papel moeda, o que limita o seu alcance. Além disso, boa parte das vending machines não estão conectadas à internet, e por isso, o dono dessas máquinas de vendas deve ir ao local para verificar o estoque dos produtos. Diante disso, este trabalho visa desenvolver uma máquina de vendas automáticas que permite o pagamento por PIX, além do papel moeda. Além disso, a máquina de vendas estará conectada à internet, permitindo assim o desenvolvimento de um dashboard, que facilitará o gestor a controlar o estoque. Como resultado, espera-se o desenvolvimento de um produto inovador, que possa ser futuramente comercializado para a comunidade.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
-
-
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/projeto11.png" alt="">
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Educação Ambiental Crítica Sob A Perspectiva Ctsa e Interdisciplinar na Educação Básica</h3>
-          <ul>
-            <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-            <li><strong>Equipe Participante: </strong> <br>
-              Wiliane da Silva Lima.
-            <li><strong>Status do Projeto:</strong> Execução</li>
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Descrição</h2>
-          <p class="descricao">
-            O objetivo deste projeto interdisciplinar, centrado nas metodologias de ensino e de aprendizagem na educação básica, é investigar como o ensino interdisciplinar de Física, Química e Educação Física se articula na abordagem de temáticas ambientais com enfoque CTSA, promovendo participação ativa, resolução de questões sociocientíficas e letramento ambiental de alunos do ensino médio integrado através de sequência didática. A pesquisa será conduzida em abordagem quali-quantitativa, com objetivo exploratório e explicativo, o procedimento de pesquisa adotado será a pesquisa participante. Os participantes da pesquisa serão alunos do ensino médio, 3º ano (n=40), do Instituto Federal do Rio Grande do Norte (IFRN), na cidade de Pau dos Ferros, RN. Espera-se que os resultados e impactos fortaleçam a educação Potiguar, em suas potencialidades e peculiaridades e que haja a aquisição de letramento científico e ambiental na abordagem de questões sociocientíficas presente no cotidiano dos educandos, além de ganho em relação as competências sociocognitivas necessárias para a transformação do pensar sustentável.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
-
-
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/projeto12.png" alt="">
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Estudo da Qualidade de Energia Elétrica em Sistema de Microgeração Residencial</h3>
-          <ul>
-            <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-            <li><strong>Equipe Participante: </strong> <br>
-              Coordernador(a): Samara De Cavalcante Paiva<br> 
-              Docentes: Cecilio Martins De Sousa Neto;
-                        Francisco Carlos Gurgel Da Silva Segundo<br> 
-              Discentes: Matheus Da Cruz Pereira;<br>
-                         Paulo Henrique De Souza Rego
-            <li><strong>Status do Projeto:</strong> Execução</li>
-              
-              
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Descrição</h2>
-          <p class="descricao">
-            O projeto de pesquisa intitulado de “Estudo da QEE em Sistema de Microgeração Residencial” visa o estudo do impacto da
-            conexão de sistemas fotovoltaicos de geração de energia residenciais na rede de energia elétrica. O projeto irá
-            averiguar o impacto da conexão desses sistemas de microgeração na rede e se os fatores de qualidade de energia
-            elétrica (QEE), segundo a PRODIST, estão sendo respeitados.
-            O projeto tem por objetivo principal realizar um estudo dos fatores de qualidade de energia elétrica em sistemas de
-            microgeração residencial conectados à rede elétrica de distribuição de energia.
-            Os objetivos específicos incluem:
-             Levantamento bibliográfico de referências normativas sobre quais fatores de qualidade de
-            energia elétrica são levados em consideração e seus limites admissíveis;
-             Estudo acerca das ferramentas computacionais que mais se adequam ao estudo;
-             Coleta de dados de sistemas reais em funcionamento;
-             Análise dos dados e verificação do comportamento do sistema com a entrada de uma nova fonte de geração de energia;
-             Expansão do estudo para analisar sistemas conectados à rede de alta tensão com sistemas de microgeração;
-             Análise do faturamento de energia e da evolução do consumo energético nos períodos de
-            instalação dos sistemas fotovoltaicos;
-             Desenvolvimento de um software para análise dos dados de forma intuitiva pelos usuários;
-             Conclusões e análises finais.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
-
-
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/projeto13.png" alt="">
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>PONG: Comunidade de jogos no Alto Oeste Potiguar</h3>
-          <ul>
-            <li><strong>Tipo do Projeto:</strong> Extensão</li>
-            <li><strong>Equipe Participante: </strong><br>
-              Docente: Reudismam Rolim De Sousa;<br>
-              Discente: Francisco Gerliano De Oliveira Souza; </li>
-            <li><strong>Status do Projeto:</strong> Execução</li>
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Descrição</h2>
-          <p class="descricao">
-            O PONG (Potiguar Indie Games) é um grupo de desenvolvedores de jogos do Rio Grande do Norte aberto à comunidade. Esse grupo realiza encontro mensal de desenvolvedores de jogos analógicos e digitais, visando promover a divulgação e o teste de jogos em desenvolvimento, assim como a troca de informações relevantes à área e o estabelecimento de contatos profissionais. A organização também realiza outras ações, tais como o game jams (maratonas de desenvolvimento de jogos em curto prazo – 48 ou 76 horas), talks com personalidades bem-sucedidas na indústria nacional, participação em feiras, festivais e eventos conexos com jogos, encontros oficiais de grupos de usuários de certas ferramentas de jogos, inclusive com apoio das empresas, como o Unity User Group Natal. O LISA atua em conjunto com o PONG para desenvolver uma comunidade de desenvolvedores de jogos, buscando difundir o desenvolvimento de jogos no Alto Oeste Potiguar.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
-
-
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/projeto14.png" alt="">
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Levando a Computação para a Educação Básica</h3>
-          <ul>
-            <li><strong>Tipo do Projeto:</strong> Extensão</li>
-            <li><strong>Equipe Participante: </strong> <br>
-             Docentes: Petrucio Ricardo Tavares De Medeiros; <br>
-             Reudismam Rolim De Sousa;<br>
-             Discente: Andrey De Oliveira Sabino; </li>
-            <li><strong>Status do Projeto:</strong> Planejamento</li>
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Descrição</h2>
-          <p class="descricao">
-            A Lei de Diretrizes e Bases da Educação Nacional (Lei nº 9394/1996) incluiu o ensino de programação, robótica e outras competências como novo componente curricular na Educação Básica (ensino médio e superior), tornando o ensino dessas áreas como elemento essencial para a formação dos alunos. No entanto, algumas unidades escolares ainda implantaram esses novos componentes curriculares. Considerando a importância dessa ação, o objetivo desse projeto é levar o ensino de programação para o ensino básico, buscando levar o ensino de programação para a Educação Básica. O projeto é executado em escolas de educação básica utilizando Tecnologias da Informação e Comunicação (TICs).
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
-
-
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/projeto15.png" alt="">
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Pré-Algoritmos: Introdução à Lógica de Programação</h3>
-          <ul>
-            <li><strong>Tipo do Projeto:</strong> Ensino</li>
-            <li><strong>Equipe Participante: </strong><br>
-              Doscentes: Reudismam Rolim De Sousa;<br>
-              Hortencia Pessoa Rego Gomes;<br>
-              Gilcilene Lelia Souza Do Nascimento; 
-              Marcos Jhonaths De Oliveira;
-              Vinicius Silva; 
-              Leonardo Inacio Guilherme Dantas; 
-              Andrey De Oliveira Sabino; 
-              Maria Fernanda Carvalho Duarte;</li>
-            <li><strong>Status do Projeto:</strong> Execução</li>
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Descrição</h2>
-          <p class="descricao">
-            Discentes de cursos na área de tecnologia podem apresentar dificuldades com a criação de Algoritmos. Isso pode levar a problemas de repetência, evasão e desmotivação nessa disciplina. O projeto "Pré-Algoritmos" busca novas estratégias de ensino de Lógica de Programação, visando reduzir as taxas de insucessos no componente voltados a criação de Algoritmos. Forma de Engajamento dos alunos: Como forma de engajamento dos discentes é utilizada a gamificação, pelo uso de juízes online, como a Beecrowd (https://www.beecrowd.com.br/), uma plataforma gamificada para a resolução de problemas de programação. Ademais, os discentes são encorajados a participarem de competições de Maratona de Programação e Hackathons, em que podem utilizar os conhecimentos adquiridos na ação de ensino e no curso.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
-
-
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/projeto16.png" alt="">
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Coders: Formando Campeões</h3>
-          <ul>
-            <li><strong>Tipo do Projeto:</strong> Ensino</li>
-            <li><strong>Equipe Participante: </strong> <br>
-              Gilcilene Lelia Souza Do Nascimento; 
-              Hortencia Pessoa Rego Gomes; 
-              Reudismam Rolim De Sousa;</li>
-            <li><strong>Status do Projeto:</strong> Concluído</li>
-        </div>
-        <div class="portfolio-description">
-          <h2>Descrição</h2>
-          <p class="descricao">
-            A área de Tecnologia da Informação (TI) encontra-se em evolução. Em especial, na Universidade Federal Rural do Semi-Árido -- Campus Pau dos Ferros, vários projetos necessitam de habilidades voltadas ao desenvolvimento de ambientes de software (e.g., análise, desenvolvimento, design, testagem, etc.) e a programação de computadores. O projeto Coders (Codificadores) busca desenvolver as habilidades necessárias a área de desenvolvimento de software, tais como o desenvolvimento de ambientes Web, desenvolvimento de aplicações móveis, análise, projeto e escrita de algoritmos, design de interfaces, dentre outras habilidades, assim como levar aos discentes uma dimensão do que é desenvolvido pelos profissionais da área de TI e oportunidades de atuação desses profissionais.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
-
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/projeto17.png" alt="">
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Carcará: Atuando na Infraestrutura de Tecnologia da Informação do Campus Pau dos Ferros</h3>
-          <ul>
-            <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-            <li><strong>Equipe Participante: </strong><br> 
-              Coordenador(a): Reudismam Rolim De Sousa;<br>
-              Vice Coordenador(a): Walber Jose Adriano Silva;<br>
-              Integrantes: Allan Gabriel Silva De Freitas;
-              Amanda Cristina Alencar Gomes;
-              Ana Vitoria De Queiroz Oliveira;
-              Andrews Ferreira De Paiva Silva;
-              Andrey De Oliveira Sabino;
-              Antonia Jaelica Souza Oliveira;
-              Cicero Araujo Rodrigues;
-              Eduardo Araujo De Medeiros;
-              Evelyn Cristina De Oliveira Gomes;
-              Francisca Tainar Fernandes;
-              Francisco Felipe Chaves Lima;
-              Francisco Lailson De Almeida;
-              Gabrielle Naiare Pereira De Oliveira;
-              Jakeline Benicio De Lima;
-              Jean Ribeiro Dos Santos;
-              Joao Lucas Fernandes E Silva;
-              Jose Danilo Santos Do Nascimento;
-              Jose Pereira Do Nascimento Neto;
-              Laura Goncalves Fernandes;
-              Lavinia Dantas De Mesquita;
-              Leandra Lauana Izidio Ferreira;
-              Lidiana Costa De Souza;
-              Lucas Alves Ferreira;
-              Lucas Mairon Oliveira Camilo;
-              Manoel Nascimento De Paiva Neto;
-              Maria Alice Ferreira Teixeira;
-              Maria Francisca Pessoa De Queiroz;
-              Maria Herculana Da Silva Souza;
-              Maria Isabelly Lima De Sousa;
-              Maria Karoline Firmino De Moura;
-              Maria Luma Da Silva Oliveira;
-              Micaely Da Conceicao Melo;
-              Moises Guilherme Silva Fernandes;
-              Nathan Cardoso Linhares;
-              Pedro Arthur Santos Martins;
-              Pedro Carlos Lima Paiva;
-              Pedro Lucas Da Silva Lima;
-              Pedro Lucas Silva Cordeiro;
-              Pedro Victor Soares Goncalo;
-              Rafael Oliveira Freire;
-              Thiago Da Silva Lima;
-              Vinicios Ramom De Oliveira Queiroz;
-              Vinicius Anacleto De Almeida;
-              <li><strong>Status do Projeto:</strong> Execução</li>
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Descrição</h2>
-          <p class="descricao">
-            Uma infraestrutura de tecnologia da informação de qualidade é necessária em todas as organizações. Em especial, as instituições de ensino, além da infraestrutura necessária para as atividades administrativas, também possuem  ambientes específicos com equipamentos de TI para auxiliar na execução das atividades de ensino, pesquisa e extensão. Um exemplo desses ambientes são os laboratórios de informática, que dão apoio às aulas e projetos de pesquisa e extensão. Neste projeto é proposto o Carcará TI, que simular a essa ave, comum no sertão, busca manter-se ativo e atento para a proposições de soluções para melhoria da qualidade da infraestrutura de TI da Universidade Federal Rural do Semi-Árido (UFERSA), em especial do Campus Pau dos Ferros, tendo como norte o Plano de Desenvolvimento de Tecnologia da Informação da UFERSA.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
-
-
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/projeto18.png" alt="">
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Tecnologias Aplicadas à Educação</h3>
-          <ul>
-            <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-            <li><strong>Equipe Participante: </strong><br>
-               Alex Bruno Duarte; Ana Santana Clementino De Araujo; Andrey De Oliveira Sabino; Antonio De Padua Farias De Souza Filho; Bruno Victor Paiva Da Silva; Charlys Jerfeson Pereira Da Silva; Dyego Magno Oliveira Souza; Elizangela Cabral Dos Santos; Fatima Luana Abreu Da Silva; Felipe Hidequel Santos Da Silva; Felipe Torres Leite; Francisca Alcimone Brito Pereira; Francisco Alexson De Freitas; Francisco Tony Erick Germano; Gisele Justino Vieira; Huliane Medeiros Da Silva; Italo Augusto Souza De Assis; Jaime Antônio Do Nascimento Neto; Jarbele Cassia Da Silva Coutinho; Jessica Fernandes Pacheco; Joao Gabriel Dantas De Souza Santos; Jose Ferdinandy Silva Chagas; Jose Lindomar Pessoa De Queiroz; Jose Vinicius Gomes Magalhaes; Kennedy Reurison Lopes; Leandra Lauana Izidio Ferreira; Livia Beatriz Maia De Lima; Maria Fernanda Carvalho Duarte; Maria Graziele De Lima Magalhaes; Maria Herculana Da Silva Souza; Mateus Kainan Da Silva Elias; Natália Kelly Da Silva Pires; Nattan Ferreira Lopes; Paulo Neto De Souza Silva; Pedro Henrique Da Costa; Pedro Paulo Dantas Franco Rocha; Pedro Vinicius De Andrade Queiroz; Petrucio Ricardo Tavares De Medeiros; Raquel Barroso Leite Furtado; Renan Lucas Melo De Oliveira; Renato Alves Pessoa De Medeiros; Reudismam Rolim De Sousa; Ryam De Sousa Alves; Samara Martins Nascimento Goncalves; Thatyara Freire De Souza; Thiago José Lima Rosa; Thyago Fabricio Melo Costa;
-                <li><strong>Status do Projeto:</strong> Execução</li>
-              
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Descrição</h2>
-          <p class="descricao">
-            O objetivo do trabalho é o emprego e o desenvolvimento de tecnologias voltadas à educação, envolvendo tanto tecnologias voltadas ao ensino e ao desenvolvimento de soluções administrativas, desenvolvendo tanto ações para a melhoria da educação, a exemplo da redução da evasão, retenção e desistências no ensino superior, quando soluções para automação de atividades administrativas demoradas, repetitivas e cansativas.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
-
-
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/projeto19.png" alt="">
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Inclusão e acessibilidade nos mais diversos âmbitos do ensino superior</h3>
-          <ul>
-            <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-            <li><strong>Equipe Participante: </strong><br>
-                Ariosvaldo Barreto; Clawsio Rogerio Cruz De Sousa; Cybelle Barbosa E Lima Vasconcelos; Deivyd Heivyson Diógenes Costa; Eduardo Raimundo Dias Nunes; Eriberto Carlos Mendes Da Silva; Francisco Carlos Gurgel Da Silva Segundo; Maria Aridenise Macena Fontenelle; Marilia Cavalcanti Santiago; Rafaely Angelica Fonseca Bandeira; Regina Celia De Oliveira Brasil Delgado; Reudismam Rolim De Sousa; Vania Christina Nascimento Porto;
-                <li><strong>Status do Projeto:</strong> Execução</li>
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Descrição</h2>
-          <p class="descricao">
-            O ambiente universitário é ocupado ecleticamente pelos membros da comunidade acadêmica, tendo de forma diversa os mais diversos usuários com necessidades de uso diferentes, ensejando a necessidade da inclusão desde o estacionamento, o local de reunião pública, as áreas de vivências, as salas de aula e entre outros aspectos o ajuste necessário do método de lecionar as componentes curriculares integrantes dos cursos, independentemente de qual grande área esse esteja vinculado ao CNPQ, Conselho Nacional de Desenvolvimento Científico e Tecnológico. Em busca de melhoria contínua e de fomentar o ensino superior de qualidade em instituições públicas, é que o estudo pretende verificar entre os mais diversos aspectos de correlação e implementação de infraestruturas acessíveis e necessárias para o bom desempenho das atividades didáticas, além da verificação da necessidade de desenvolvimento de tecnologias aplicáveis a adequação da antropometria ao desenvolvimento do ensino, pesquisa e da extensão universitária. Ao término, pretende-se obter respostas para a implementação de medidas técnicas necessárias, com o intuito de tornar o ensino superior eficaz.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
-
-
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/projeto20.png" alt="">
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Mulheres nas Ciências Exatas</h3>
-          <ul>
-            <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-            <li><strong>Equipe Participante: </strong> <br>
-                Adrielee Karin Feliciano Da Silva; Ana Sara Da Silva Clementino; Davi Samuel Gregorio Alves; Debora Gabrielly Marrocos Dos Santos; Enai Taveira Da Cunha; Erik David Da Silva Lima; Gilwan Souza Santos; Gislene Micarla Borges De Lima; Janile Soares Chacon; Jarbele Cassia Da Silva Coutinho; João Evangelista Pereira; Joao Victor Correia Queiroz Cavalcante; Leticia Maria Bandeira De Lucena; Lidiane Alves De Morais; Luciana Torres Correia De Mello; Luiz Fernando Da Cunha Silva; Manoele Vicente Cassiano Viega; Maria Yngrid Cunha Dos Santos; Reudismam Rolim De Sousa; Samara Martins Nascimento Goncalves; Taina Ferreira Confessor; Tania Luna Laura; Verônica Maria Lima Silva; Virginia Moura Ramos; Wesley Dos Santos Silva;
-                <li><strong>Status do Projeto:</strong> Execução</li>
-              
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Descrição</h2>
-          <p class="descricao">
-            Este projeto tem como finalidade entender o contexto profissional e acadêmico de mulheres que atuam na área de Ciências Exatas, assim como incentivar o interesse feminino na referida área de conhecimento. Portanto, inicialmente, julga-se importante investigar onde alunas hoje estão, e o que alunas egressas hoje fazem, de forma a entender como a graduação impactou nas escolhas realizadas. O projeto permitirá investigar o perfil dessas mulheres, fornecendo importantes subsídios para as mais diversas tomadas de decisões, como apresentar a real inserção no mercado de trabalho e como as Universidades podem continuar incentivando sua permanência nos cursos.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
-
-
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/projeto21.png" alt="">
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Investigando Oportunidades e Desafios na Indústria de Software</h3>
-          <ul>
-            <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-            <li><strong>Equipe Participante: </strong><br> 
-                Docente: Jarbele Cassia Da Silva Coutinho;
-                Leticia Maria Bandeira De Lucena;
-                Samara Martins Nascimento Goncalves; 
-                Thais Gabrielly Marques De Andrade;
-                <li><strong>Status do Projeto:</strong> Execução</li>
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Descrição</h2>
-          <p class="descricao">
-            Diante do avanço contínuo das tecnologias e da necessidade de formar profissionais mais capacitados para as reais demandas do mercado de trabalho na área de Tecnologia da Informação (TI), surge a necessidade de compreender o cenário atual da indústria de software. Assim, este projeto de pesquisa tem como objetivo investigar as principais oportunidades e desafios emergentes da indústria de software, no que se refere à qualificação profissional, tecnologias emergentes, dentre outros. Portanto, espera-se contribuir com novos insights para a formação acadêmica de futuros profissionais na área de TI, bem como apresentar um panorama atual desta área.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
-
-
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/projeto22.png" alt="">
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Implementação de Ferramentas de Aplicações Computacionais de Engenharias/UFERSA (FACEU)</h3>
-          <ul>
-            <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-            <li><strong>Equipe Participante: </strong><br>
-                Alisson Gadelha De Medeiros; Arthur Ramos Barrêto; Bruno Wellington Da Silva Lima; Fernando Dutra Ribeiro; Hildi Dante Oliveira De Queiroz; Joao Victor Pereira Dantas De Lucena; John Eloi Bezerra; Maria Joseane Felipe Guedes Macedo; Maria Josicleide Felipe Guedes; Mateus Dutra Rocha; Nildo Da Silva Dias; Raimundo Gomes De Amorim Neto; Reudismam Rolim De Sousa; Thaynon Brendon Pinto Noronha; Valder Adriano Gomes De Matos Rocha; Wagner Torquato De Oliveira Filho; Wesley De Oliveira Santos;
-                <li><strong>Status do Projeto:</strong> Execução</li>
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Descrição</h2>
-          <p class="descricao">
-            A utilização de softwares especializados em resolver problemas e projetos de engenharia tem se tornado amplamente difundida. Em contrapartida, a grande maioria dessas ferramentas apresentam licença para uso, fato que pode dificultar o acesso dessa prática. Diante desse contexto, o presente projeto tem como objetivo otimizar ferramentas didáticas de fácil uso e acesso, para auxiliar usuários no ensino de componentes curriculares relacionados às engenharias em instituições de ensino superior. Para tanto, as aplicações computacionais poderão ser desenvolvidas em ambientes de linguagem de programação de código aberto código aberto e planilhas eletrônicas e auxiliares. Outrossim, com a possibilidade de hospedá-los via web, por exemplo, em sites com essa finalidade e aplicativos para smartphones, destinado aos estudantes e profissionais da área. Com o desenvolvimento deste projeto tem-se a possibilidade de contribuir para o desenvolvimento de inovação tecnológica da UFERSA, na perspectiva de produção intelectual de programas de computador no campo da engenharia.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
-
-
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/projeto23.png" alt="">
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Metodologias Ativas para o ensino de Ciências Exatas e Naturais</h3>
-          <ul>
-            <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-            <li><strong>Equipe Participante: </strong><br>
-                Agda Maria Castro Marques; Ana Santana Clementino De Araujo; Antonio De Padua Farias De Souza Filho; Carlos Gabriel Ferreira; Glaydson Francisco Barros De Oliveira; Heitor Claudino Dantas; Iverton Emiquison Ribeiro De Bessa; Joana Larissa De Oliveira Marcolino; José David De Araújo; José Ronaldo Souza Nunes; José Wagner Cavalcanti Silva; Lazaro Romulo De Souza; Lucas Emanuel Freire De Lima; Marco Diego Aurelio Mesquita; Maria Luiza Alves Lopes; Murilo Lacerda De Souza Fontes; Nivia Stefanie Da Silva Lima; Rafael Leite Dos Santos; Reudismam Rolim De Sousa; Roniere Alves Moreira;te: </strong> 
-                <li><strong>Status do Projeto:</strong> Execução</li>
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Descrição</h2>
-          <p class="descricao">
-            As Instituições de ensino do país, progressivamente, vêm superando seus desafios e, de acordo com as suas realidades, seguem na efetivação de estratégias que possibilitam tanto a prática docente, quanto a aprendizagem, através do uso das tecnologias educacionais, principalmente, por meio da internet. É preciso cada vez mais a aproximação do que o estudante vivencia extramuros da escola com as atividades próprias do ambiente escolar. Os dispositivos móveis, principalmente os smartphones conectados à internet, são recursos muito presentes na vida dos alunos. As possibilidades que se abrem com essa ferramenta são inúmeras e, o professor, bem como a escola de modo geral, devem aproveitar essa fonte de informação, para sistematizar o conhecimento. Nesse contexto, visando contribuir com o processo de ensino e aprendizado objetivamos desenvolver sequências didáticas atrelada às metodologias ativas para o ensino-aprendizagem de conceitos básicos de Matemática, Física e/ou Química, a fim de promover a vivência e interação dos discentes com o conteúdo a ser trabalhado.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
-
-
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/projeto24.png" alt="">
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Gamificação e Engenharia de Ontologias na Promoção do Bem-estar e Equidade de Gênero em Sistemas de Tutores Inteligentes</h3>
-          <ul>
-            <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-            <li><strong>Equipe Participante: </strong> <br>
-                Alex Bruno Duarte;
-                Geiser Chalco Challco;
-                Joao Pedro Medeiros Nogueira Moura;
-                Kayllan Pablo Da Silva;
-                Maria Alice Ferreira Teixeira;
-                Rafael Oliveira Freire;
-                Reudismam Rolim De Sousa;
-                <li><strong>Status do Projeto:</strong> Execução</li>
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Descrição</h2>
-          <p class="descricao">
-            Este projeto de pesquisa tem três objetivos fundamentais: primeiro, investigar os efeitos da Gamificação no bem-estar dos estudantes empregando para sua análise, design e avaliação teorias de psicologia positiva; o segundo, investigar quais são os efeitos causados nos estudantes por estereótipos de gênero presentes na Gamificação; e o terceiro, é aplicação de engenharia de ontologias para o desenvolvimento e gamificação de Sistemas de Tutores Inteligentes com mecanismos de apoio à promoção do bem-estar e que promovam a equidade de gênero.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
-
-
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/projeto25.png" alt="">
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Mineração de Dados Educacionais e Web-Semântica no Suporte à Gestão Inteligente da Aprendizagem no Ensino Híbrido</h3>
-          <ul>
-            <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-            <li><strong>Equipe Participante: </strong> <br>
-                Alice Dos Santos Pinheiro;
-                Angelo Silvano Da Silva Sabino;
-                Geiser Chalco Challco;
-                Huliane Medeiros Da Silva;
-                Reudismam Rolim De Sousa;
-                <li><strong>Status do Projeto:</strong> Execução</li>
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Descrição</h2>
-          <p class="descricao">
-            A pandemia aprofundou a crise na educação brasileira, fazendo com que hoje exista déficit de aprendizagem, alta evasão escolar e estresse acadêmico. Nesta perspectiva, os sistemas educacionais tradicionais não dão conta da crise. Precisa-se adaptar o sistema tradicional e o ensino híbrido é proposto como uma solução que facilita ao aluno acesso à educação a partir de qualquer lugar e a qualquer momento. Evidências sugerem que o ensino híbrido é tão efetivo como o ensino online e presencial. No entanto há vários desafios que devem ser superados para sua correta aplicação. Os principais desafios são a realização de um monitoramento e avaliação constante do ensino híbrido e a personalização da aprendizagem baseado nesse monitoramento e avaliação. Devido à grande variedade de dados disponíveis e em diferentes formatos, também é um desafio seu compartilhamento e tornar eles úteis para a tomada de decisões. Para lidar com esses desafios, duas áreas são promissoras: primeiro, a Mineração de Dados Educacionais (EDM - Educational Data Mining), onde pesquisas são orientadas à aplicação de técnicas de aprendizado máquina para a análises de dados e descoberta automática de padrões; e segundo, a Web-Semântica, onde pesquisas são conduzidas a fim de prover à web com uma camada de metadados que é usada por programas de computador para inferir novas informações. Assim, este projeto de pesquisa tem por objetivo investigar como a EDM e a Web-Semântica podem ser empregadas no apoio à tomada de decisões no ensino híbrido. Essa gestão, a qual combina a inteligência humana com técnicas de Inteligência Artificial (IA), tais como EDM e Web-Semântica, é denominada neste projeto de pesquisa de Gestão Inteligente de Aprendizagem no ensino híbrido e ela é o assunto abordado neste projeto de pesquisa
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
-
-
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/projeto26.png" alt="">
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Jogo Educacional Móbile para Escolas de Ensino Fundamental e Médio</h3>
-          <ul>
-            <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-            <li><strong>Equipe Participante: </strong><br>
-              Dimona Laquis Alves Andrade;
-              Jessica Rosalia Fernandes;
-              Reudismam Rolim De Sousa;
-              Verônica Maria Lima Silva.
-              <li><strong>Status do Projeto:</strong> Concluído</li>
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Descrição</h2>
-          <p class="descricao">
-            Jogos educacionais digitais vêm sendo aplicados como métodos para melhorar a atenção e a cognição de alunos, desde o ensino básico até o médio. A gamificação é uma metodologia ativa que pode ser entendida como a aplicação de estratégias de jogos para a resolução de um problema, de maneira a motivar e engajar o público alvo. Dessa forma, o objetivo do projeto é o desenvolvimento de um jogo educacional digital, baseado em quiz para alunos do ensino fundamental e médio com o intuito de melhorar a aprendizagem durante estas etapas de formação.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
-
-
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/projeto27.png" alt="">
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Projeto Olímpico</h3>
-          <ul>
-            <li><strong>Tipo do Projeto:</strong> Extensão</li>
-            <li><strong>Equipe Participante: </strong> <br>
-              Adller de Oliveira Guimarães;
-              Alcilene Bandeira de Souza;
-              Reudisma Rolim de Souza;
-              Felipe Torres Leite.
-              <li><strong>Status do Projeto:</strong> Concluído</li>
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Descrição</h2>
-          <p class="descricao">
-            As olímpiadas de programação são ferramentas importantes para motivação dos alunos para o aprendizado de programação. Isso pode ser explicado pelo fato dessas competições serem, frequentemente, monitoradas por grandes companhias, voltadas para o desenvolvimento de tecnologia, tais como Google, Facebook e Microsoft, para a seleção de talentos de para as suas instituições. Dessa forma, os alunos são naturalmente inspirados a se superarem cada vez mais, em busca de uma oportunidade de trabalho nessas empresas. Além de desenvolver talentos, as olimpíadas aumentam a reputação da universidade e atrai empresas parceiras em buscas profissionais bem qualificados. Essas competições também atuam na capacitação de professores, no intuito de elevarem a sua capacidade de ensino, no sentido de formar alunos bem qualificados para atuarem nessas competições (UFCG, 2018). Neste projeto de ensino e extensão, pretende-se capacitar alunos da comunidade externa à UFERSA, tais como alunos do ensino médio, e também alunos da comunidade interna ingressantes e veteranos.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
-
-
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/projeto28.png" alt="">
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Sistema de Gerenciamento de Transportes</h3>
-          <ul>
-            <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-            <li><strong>Equipe Participante: </strong><br> 
-            Ferdinandy Chagas;
-            Pedro Thiago;
-            Walber Adriano;
-            Reudismam Rolim;
-            Rosana Cibely;
-            Tony Erick.
-            <li><strong>Status do Projeto:</strong> Planejamento</li>
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Descrição</h2>
-          <p class="descricao">
-            Este projeto tem como objetivo geral o desenvolvimento de um sistema de gerenciamento de transportes que otimize a
-            gestão de frotas de veículos da UFERSA, reduzindo custos operacionais e aumentando a eficiência e a qualidade dos
-            serviços prestados.
-            
-            Os objetivos específicos incluem a automatização da gestão de frotas, oferecendo controle sobre viagens, manutenção e
-            desempenho dos veículos; a gestão dos custos e despesas, com análise de oportunidades de economia; a garantia da
-            segurança de motoristas e passageiros por meio de monitoramento de manutenção preventiva; a criação de um painel de
-            indicadores para facilitar a tomada de decisão baseada em dados precisos; e a oferta de transparência para a comunidade
-            acadêmica e a sociedade sobre os custos operacionais.
-            
-            Esses objetivos são essenciais para guiar o desenvolvimento do sistema, permitindo a priorização de funcionalidades e
-            recursos, bem como a avaliação do sucesso do projeto e a identificação de melhorias contínuas.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
-
-
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/projeto29.png" alt="">
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Sistema de Triagem Hospitalar</h3>
-          <ul>
-            <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-            <li><strong>Equipe Participante: </strong> <br>
-              Ferdinandy Chagas;
-              Ricardo Petrúcio;
-              Walber Adriano;
-              João Gabriel;
-              Jeferson Bezerra.
-              <li><strong>Status do Projeto:</strong> Execução</li>
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Descrição</h2>
-          <p class="descricao">
-            O projeto tem como objetivo geral o desenvolvimento de um sistema de triagem hospitalar que otimize o processo de
-            atendimento emergencial, priorizando os pacientes de acordo com a gravidade de suas condições e aumentando a eficiência
-            do fluxo de atendimento no hospital.
-            
-            Os objetivos específicos incluem a automatização do processo de triagem, permitindo a classificação ágil e precisa dos
-            pacientes com base em protocolos clínicos; a integração do sistema com o prontuário eletrônico dos pacientes, para
-            facilitar o acesso rápido a informações médicas relevantes; o monitoramento em tempo real da capacidade de atendimento
-            do hospital, permitindo uma melhor alocação de recursos e pessoal; a geração de relatórios e indicadores de desempenho,
-            para apoiar a tomada de decisões estratégicas na gestão hospitalar; e a melhoria na comunicação entre a equipe médica e
-            os setores envolvidos no atendimento.
-            
-            Esses objetivos norteiam o desenvolvimento do sistema, garantindo que ele atenda às necessidades do hospital e dos
-            pacientes. O sistema permitirá uma priorização eficiente e transparente dos atendimentos, otimizará os recursos
-            hospitalares e oferecerá dados precisos para análise e melhorias contínuas na qualidade do serviço.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
-
-
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/projeto30.png" alt="">
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Sistema para Prestação de Contas em Projetos</h3>
-          <ul>
-            <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-            <li><strong>Equipe Participante: </strong> <br>
-              Ferdinandy Chagas;
-              Segundo Gurgel;
-              Liana Holanda.
-               <li><strong>Status do Projeto:</strong> Planejamento</li>
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Descrição</h2>
-          <p class="descricao">
-            Este projeto tem como objetivo geral desenvolver um sistema de prestação de contas para projetos de pesquisa e extensão
-            financiados com recursos públicos ou privados, garantindo transparência, controle e conformidade com as exigências
-            legais e institucionais.
-            
-            Os objetivos específicos incluem a automatização do processo de prestação de contas, permitindo o registro detalhado de
-            despesas e receitas relacionadas a cada projeto; a integração com sistemas de gestão financeira, facilitando o controle
-            e a conciliação dos recursos; a geração de relatórios financeiros conforme os critérios exigidos por órgãos
-            financiadores e de controle; o acompanhamento em tempo real da execução orçamentária, oferecendo visibilidade para
-            coordenadores e gestores; e a oferta de ferramentas para auditar e verificar a conformidade de cada projeto com as
-            normas de financiamento, prevenindo erros e assegurando a transparência dos gastos.
-            
-            Esses objetivos são fundamentais para guiar o desenvolvimento do sistema, garantindo que ele atenda às necessidades dos
-            projetos financiados, assegurando uma prestação de contas eficiente e rigorosa. O sistema proporcionará maior controle
-            sobre os recursos, reduzirá riscos de não conformidade e facilitará a análise financeira por parte de gestores e
-            financiadores.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
-
-
-<!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-
-    <div class="row gy-4">
-
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/projeto31.png" alt="">
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>EduBolsas - Sistema de Gerenciamento de Bolsistas</h3>
-          <ul>
-            <li><strong>Tipo do Projeto:</strong> Pesquisa</li>
-            <li><strong>Equipe Participante: </strong><br>
-              Ferdinandy Chagas;
-              Luiz Felipe Alvez Pereira
-              <li><strong>Status do Projeto:</strong> Concluído</li>
-          </ul>
-        </div>
-        <div class="portfolio-description">
-          <h2>Descrição</h2>
-          <p class="descricao">
-            Nos últimos anos, as instituições de ensino têm passado por mudanças na gestão em decorrência dos avanços tecnológicos no meio educacional. Essas mudanças exigem uma adaptação constante por parte das instituições, à medida que novas ferramentas e recursos digitais se tornam disponíveis, impactando profundamente como o ensino e a aprendizagem são gerenciados. Os sistemas de gestão acadêmicas estão presentes na maioria dos processos realizados na administração e acompanhamento de atividades estudantis. Isso se deve a facilidade que é fornecida por softwares que automatiza grande parte do gerenciamento dessas atividades. Sendo assim, um sistema web para gerenciamento de bolsas acadêmicas pode se tornar uma ferramenta de grande potencial para garantir eficácia e confiabilidade às necessidades de instituições e indivíduos envolvidos. Dessa forma, o presente projeto visou realizar a implementação de tal sistema envolvendo a avaliação de todas as etapas realizadas no acompanhamento de bolsas estudantis, e visando fornecer funcionalidades com bom desempenho, usabilidade e segurança. A implementação da ferramenta se deu com a utilização de tecnologias como React no frontend, enquanto o backend é alimentado por uma API Django. A geração automatizada de relatórios em PDF simplifica a documentação e o acompanhamento das bolsas.
-
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section><!-- End Portfolio Details Section -->
+    </section><!-- Fim Seção Principal do Portfólio -->
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="container">
-      <h3>Seleção</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      <div class="container">
+          <!-- Conteúdo do Footer Mantido -->
+          <div class="footer-top pb-4">
+              <div class="row gy-4">
+                  <div class="col-lg-6 col-md-6 footer-info">
+                       <a href="index.html" class="logo d-flex align-items-center mb-3 text-white text-decoration-none">
+                          <span style="font-size: 24px; font-weight: 600;">LISA</span>
+                       </a>
+                       <p>Laboratório de Inovação em Software e Automação.</p>
+                      <div class="social-links mt-3">
+                          <a href="https://www.instagram.com/lisa.ufersa/" target="_blank" rel="noopener noreferrer" class="instagram"><i class="bx bxl-instagram"></i></a>
+                          <a href="https://github.com/lisa-ufersa" target="_blank" rel="noopener noreferrer" class="github"><i class="bx bxl-github"></i></a>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-6 footer-links">
+                      <h4>Institucional</h4>
+                      <ul class="list-unstyled">
+                          <li><i class="bx bx-chevron-right"></i> <a href="./index.html#hero" class="text-decoration-none scrollto">Início</a></li>
+                          <li><i class="bx bx-chevron-right"></i> <a href="./index.html#about" class="text-decoration-none scrollto">Sobre</a></li>
+                          <li><i class="bx bx-chevron-right"></i> <a href="./index.html#services" class="text-decoration-none scrollto">Serviços</a></li>
+                          <li><i class="bx bx-chevron-right"></i> <a href="https://ufersa.edu.br/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">UFERSA</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-3 col-6 footer-links">
+                      <h4>Nossas Áreas</h4>
+                      <ul class="list-unstyled">
+                           <li><i class="bx bx-chevron-right"></i> <a href="./index.html#services" class="text-decoration-none scrollto">Automação</a></li>
+                           <li><i class="bx bx-chevron-right"></i> <a href="./index.html#services" class="text-decoration-none scrollto">Inteligência Artificial</a></li>
+                           <li><i class="bx bx-chevron-right"></i> <a href="./index.html#services" class="text-decoration-none scrollto">Web & Mobile</a></li>
+                           <li><i class="bx bx-chevron-right"></i> <a href="./index.html#services" class="text-decoration-none scrollto">IoT</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+           <div class="copyright pt-3 mt-3 border-top border-secondary border-opacity-25">
+               © <strong><span>LISA/UFERSA</span></strong>. Todos os direitos reservados.
+          </div>
       </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>Seleção</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/selecao-bootstrap-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
   </footer><!-- End Footer -->
 
+
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>

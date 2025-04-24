@@ -1,0 +1,136 @@
+/*--------------------------------------------------------------
+# Portfolio Showcase Section
+--------------------------------------------------------------*/
+.portfolio-showcase {
+  padding: 60px 0; /* Ajuste o padding vertical da seção */
+}
+
+.portfolio-showcase .section-title h2 {
+  font-size: 28px; /* Define a font size */
+  color: var(--primary-color); /* Adds a primary color */
+}
+
+.portfolio-showcase .section-title p {
+  /* Pode manter o estilo padrão ou ajustar */
+  margin-bottom: 40px; /* Mais espaço abaixo do subtítulo da seção */
+}
+
+/* Estilo para cada entrada de projeto (o card) */
+.portfolio-entry {
+  background-color: #fff; /* Garante fundo branco */
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07); /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+  overflow: hidden; /* Garante que conteúdo não vaze dos cantos arredondados */
+}
+
+.portfolio-entry:hover {
+  transform: translateY(-5px); /* Leve elevação no hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada no hover */
+}
+
+/* Slider de Imagens dentro do card */
+.portfolio-entry .portfolio-slider {
+  max-height: 400px; /* Limita altura máxima do slider, ajuste conforme necessário */
+  overflow: hidden;
+}
+.portfolio-entry .portfolio-slider img {
+   object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+   width: 100%;
+   height: 100%; /* Ocupa a altura do slide */
+}
+
+/* Informações do Projeto */
+.portfolio-entry .portfolio-info {
+  padding-top: 10px; /* Espaço acima das infos */
+}
+
+.portfolio-entry .portfolio-info .portfolio-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--dark-text); /* Cor escura para o título */
+  margin-bottom: 15px;
+}
+
+.portfolio-entry .portfolio-info ul {
+  margin-bottom: 0; /* Remove margem inferior da lista */
+}
+
+.portfolio-entry .portfolio-info ul li {
+  font-size: 14px;
+  color: var(--secondary-color); /* Cor secundária para detalhes */
+  margin-bottom: 8px;
+}
+
+.portfolio-entry .portfolio-info ul li strong {
+  font-weight: 600;
+  color: var(--dark-text); /* Cor mais escura para os rótulos */
+  margin-right: 5px;
+}
+
+/* Descrição do Projeto */
+.portfolio-entry .portfolio-description {
+  margin-top: 20px; /* Espaço acima da descrição */
+  border-top: 1px solid #eee; /* Linha sutil de separação */
+  padding-top: 20px;
+}
+
+.portfolio-entry .portfolio-description h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-color); /* Usa cor primária para destacar */
+  margin-bottom: 10px;
+}
+
+.portfolio-entry .portfolio-description p {
+  font-size: 15px;
+  color: var(--secondary-color);
+  line-height: 1.7;
+}
+
+/* Ajustes para Swiper Pagination (se necessário) */
+.portfolio-entry .swiper-pagination .swiper-pagination-bullet {
+  background-color: var(--primary-color); /* Bolinhas na cor primária */
+  opacity: 0.6;
+}
+
+.portfolio-entry .swiper-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Ajustes de Responsividade Adicionais (Opcional)
+--------------------------------------------------------------*/
+@media (max-width: 991px) {
+  .portfolio-entry .col-lg-7,
+  .portfolio-entry .col-lg-5 {
+    flex: 1; /* Ajusta o tamanho das colunas para ocupar espaço igual */
+    padding: 10px; /* Adiciona espaçamento interno */
+  }
+  .portfolio-entry .portfolio-info .portfolio-title {
+      font-size: 20px;
+  }
+   .portfolio-entry .portfolio-description {
+       margin-top: 15px;
+       padding-top: 15px;
+   }
+}
+
+@media (max-width: 767px) {
+  .portfolio-showcase .section-title p {
+      margin-bottom: 30px;
+  }
+  .portfolio-entry {
+      margin-bottom: 30px; /* Menos espaço entre cards em mobile */
+      padding: 20px; /* Menos padding interno */
+  }
+   .portfolio-entry .portfolio-info .portfolio-title {
+      font-size: 18px;
+  }
+   .portfolio-entry .portfolio-description h2 {
+       font-size: 16px;
+   }
+   .portfolio-entry .portfolio-description p {
+       font-size: 14px;
+   }
+}
