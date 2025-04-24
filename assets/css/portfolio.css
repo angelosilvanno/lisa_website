@@ -82,3 +82,55 @@
     font-size: 0.8rem;
     margin-right: 0.5em;
 }
+
+/*--------------------------------------------------------------
+# Header - Estilos Específicos para Páginas Internas
+--------------------------------------------------------------*/
+#header.header-inner-page {
+  background: #fff; /* Fundo branco */
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08); /* Adiciona sombra */
+  /* Garante que a altura e o padding sejam os mesmos do header-scrolled se necessário */
+  padding: 12px 0;
+}
+
+#header.header-inner-page .logo a,
+#header.header-inner-page .logo span {
+  color: var(--dark-text); /* Texto escuro para o logo */
+}
+
+#header.header-inner-page .navbar a,
+#header.header-inner-page .navbar a:focus {
+  color: var(--secondary-color); /* Texto mais escuro para os links da nav */
+  padding: 10px 0 10px 25px; /* Garante o padding correto */
+}
+
+#header.header-inner-page .navbar a:hover,
+#header.header-inner-page .navbar .active,
+#header.header-inner-page .navbar .active:focus,
+#header.header-inner-page .navbar li:hover > a {
+  color: var(--primary-color); /* Cor primária para ativo/hover */
+}
+
+#header.header-inner-page .mobile-nav-toggle {
+  color: var(--dark-text); /* Cor escura para o botão mobile */
+}
+
+/* Garante que os links do menu dropdown mobile estejam estilizados corretamente
+   quando abertos a partir de uma página interna */
+/* (As regras .navbar-mobile existentes no seu CSS devem cobrir isso,
+   mas verifique se as cores estão corretas para fundo branco) */
+.navbar-mobile {
+    background-color: #fff;
+}
+.navbar-mobile a,
+.navbar-mobile a:focus {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: var(--dark-text); /* Garante texto escuro no mobile */
+}
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
+    color: var(--primary-color);
+    background-color: rgba(var(--primary-rgb), 0.05);
+}
