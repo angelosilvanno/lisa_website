@@ -82,17 +82,55 @@ section {
 .section-title-custom h2 { font-size: 2.5rem; font-weight: 700; color: #ffffff; margin-bottom: 1rem; }
 .section-title-custom p { font-size: 1.1rem; color: var(--lisa-text-muted); max-width: 800px; margin-left: auto; margin-right: auto; }
 
-#about { background-color: var(--lisa-dark-card); }
-#about .section-title h2 { color: var(--lisa-text-light) !important; }
-#about .section-title p { color: var(--lisa-text-muted) !important; }
-#about .content p, #about .content ul span { color: var(--lisa-text-muted); }
-#about .content ul i.ri-check-double-line { color: var(--lisa-purple-light); }
-#about .btn-learn-more {
-    background: var(--lisa-purple-primary); border-color: var(--lisa-purple-primary);
-    color: #fff; padding: 8px 25px; border-radius: 5px; transition: 0.3s;
-    font-size: 14px; display: inline-block; font-weight: 500; text-decoration: none;
+/* Estilos para a NOVA SEÇÃO DE PROPÓSITOS (antiga #about) */
+#purposes-section {
+    background-color: #1a1a2e;
+    color: var(--lisa-text-light);
 }
-#about .btn-learn-more:hover { background: var(--lisa-purple-light); border-color: var(--lisa-purple-light); }
+#purposes-section .section-title-custom h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+#purposes-section .section-title-custom p {
+    font-size: 1.1rem;
+    color: var(--lisa-text-muted);
+    margin-bottom: 3rem;
+}
+#purposes-section .purpose-illustration img {
+    max-width: 100%;
+    height: auto;
+}
+.purpose-card {
+    background-color: var(--lisa-light-card-bg);
+    color: var(--lisa-text-dark-on-light-card);
+    padding: 25px;
+    border-radius: 15px;
+    height: 100%;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.purpose-card h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #341f4b;
+    margin-bottom: 0.75rem;
+}
+.purpose-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+@media (max-width: 991.98px) {
+    #purposes-section .section-title-custom h2,
+    #purposes-section .section-title-custom p {
+        text-align: center;
+    }
+    #purposes-section .purpose-illustration {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
 
 #services { background-color: var(--lisa-dark-bg); }
 .service-card {
@@ -216,47 +254,47 @@ section {
 #contact .php-email-form .sent-message {
     display: none;
 }
-#contact .php-email-form .loading { 
-    background: var(--lisa-dark-card); 
+#contact .php-email-form .loading {
+    background: var(--lisa-dark-card);
     color: var(--lisa-text-light);
-    text-align: center; 
-    padding: 15px; 
-    margin-bottom: 15px; 
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 15px;
     border-radius: 4px;
 }
-#contact .php-email-form .error-message { 
+#contact .php-email-form .error-message {
     background: #dc3545;
-    color: #fff; 
-    text-align: center; 
-    padding: 15px; 
-    font-weight: 600; 
-    margin-bottom: 15px; 
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
     border-radius: 4px;
 }
-#contact .php-email-form .sent-message { 
+#contact .php-email-form .sent-message {
     background: #28a745;
-    color: #fff; 
-    text-align: center; 
-    padding: 15px; 
-    font-weight: 600; 
-    margin-bottom: 15px; 
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
     border-radius: 4px;
 }
 
 #footer {
     background-color: var(--lisa-dark-bg);
     color: var(--lisa-text-muted);
-    font-size: 0.9rem; /* Ajuste leve no tamanho da fonte geral do footer */
+    font-size: 0.9rem;
     padding: 0 0 30px 0;
-    border-top: 1px solid var(--lisa-border-color); /* Borda sutil no topo de todo o footer */
+    border-top: 1px solid var(--lisa-border-color);
 }
 #footer .footer-top {
-    padding: 50px 0; /* Ajuste no padding */
-    background-color: transparent; /* Removido fundo diferente, para ser consistente com --lisa-dark-bg */
+    padding: 50px 0;
+    background-color: transparent;
 }
-#footer .footer-info .logo span { 
-    color: var(--lisa-text-light); 
-    font-size: 1.8rem; /* Ajuste no tamanho do logo do footer */
+#footer .footer-info .logo span {
+    color: var(--lisa-text-light);
+    font-size: 1.8rem;
     font-weight: 700;
 }
 #footer .footer-info p {
@@ -264,62 +302,59 @@ section {
     margin-top: 0.5rem;
     font-size: 0.85rem;
 }
-#footer h4 { 
-    font-size: 1rem; /* Ajuste no tamanho dos títulos das colunas */
-    font-weight: 600; 
-    color: var(--lisa-text-light); 
-    position: relative; 
-    padding-bottom: 10px; /* Espaçamento abaixo do título */
-    margin-bottom: 15px; /* Espaçamento antes da lista de links */
-    /* Opcional: uma pequena borda abaixo do título */
-    /* border-bottom: 2px solid var(--lisa-purple-primary); */
-    /* display: inline-block; */
+#footer h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--lisa-text-light);
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
 }
 #footer .footer-links ul { list-style: none; padding: 0; margin: 0; }
-#footer .footer-links ul i { 
-    padding-right: 5px; /* Maior espaçamento para o ícone */
-    color: var(--lisa-purple-primary); /* Cor do ícone mais vibrante */
-    font-size: 1rem; /* Ajuste no tamanho do ícone */
-    line-height: 1; 
+#footer .footer-links ul i {
+    padding-right: 5px;
+    color: var(--lisa-purple-primary);
+    font-size: 1rem;
+    line-height: 1;
 }
 #footer .footer-links ul li { padding: 8px 0; display: flex; align-items: center; }
 #footer .footer-links ul li:first-child { padding-top: 0; }
-#footer .footer-links ul a { 
-    color: var(--lisa-text-muted); 
-    transition: 0.3s; 
-    display: inline-block; 
-    line-height: 1; 
-    text-decoration: none; 
+#footer .footer-links ul a {
+    color: var(--lisa-text-muted);
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
     font-size: 0.9rem;
 }
 #footer .footer-links ul a:hover { color: var(--lisa-purple-light); }
 #footer .social-links a {
-    font-size: 1.2rem; /* Ícones sociais maiores */
-    display: inline-flex; /* Para melhor alinhamento do ícone interno */
+    font-size: 1.2rem;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: var(--lisa-dark-card); /* Fundo mais escuro e consistente */
-    color: var(--lisa-text-muted); /* Cor inicial mais sutil */
-    line-height: 1; 
-    padding: 0; /* Removido padding, pois o width/height definem o tamanho */
-    margin-right: 8px; /* Espaçamento entre ícones */
+    background: var(--lisa-dark-card);
+    color: var(--lisa-text-muted);
+    line-height: 1;
+    padding: 0;
+    margin-right: 8px;
     border-radius: 50%;
-    width: 40px; /* Tamanho do círculo */
+    width: 40px;
     height: 40px;
     transition: 0.3s;
-    border: 1px solid var(--lisa-border-color); /* Borda sutil */
+    border: 1px solid var(--lisa-border-color);
 }
-#footer .social-links a:hover { 
-    background: var(--lisa-purple-primary); 
-    color: #fff; 
+#footer .social-links a:hover {
+    background: var(--lisa-purple-primary);
+    color: #fff;
     border-color: var(--lisa-purple-primary);
 }
-#footer .copyright { 
-    text-align: center; 
-    padding-top: 30px; 
-    color: var(--lisa-text-muted); 
-    border-top: 1px solid var(--lisa-border-color); 
-    margin-top: 30px; /* Adicionado margin-top para separar do footer-top */
+#footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+    color: var(--lisa-text-muted);
+    border-top: 1px solid var(--lisa-border-color);
+    margin-top: 30px;
     font-size: 0.85rem;
 }
 #footer .copyright strong span { color: var(--lisa-text-light); }

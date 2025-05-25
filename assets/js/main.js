@@ -1,10 +1,3 @@
-/**
- * Template Name: Selecao
- * Updated: Mar 10 2023 with Bootstrap v5.2.3
- * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
- * Author: BootstrapMade.com
- * License: https://bootstrapmade.com/license/
- */
 (function() {
   "use strict";
 
@@ -24,7 +17,7 @@
     el.addEventListener('scroll', listener);
   };
 
-  let navbarlinks = select('#navbar .scrollto', true);
+  let navbarlinks = select('#navbarNavLISA .scrollto', true); 
   const navbarlinksActive = () => {
     let position = window.scrollY + 200;
     navbarlinks.forEach(navbarlink => {
@@ -39,8 +32,16 @@
   onscroll(document, navbarlinksActive);
 
   const scrollto = (el) => {
-    let header = select('#header');
-    let offset = header.offsetHeight;
+    let header = select('#header-new'); 
+    let navbarElement = select('.custom-navbar');
+    let offset = 0;
+
+    if (header && header.classList.contains('fixed-top') && navbarElement) {
+      offset = navbarElement.offsetHeight;
+    } else if (navbarElement) {
+      offset = navbarElement.offsetHeight;
+    }
+
     let elementPos = select(el).offsetTop;
     window.scrollTo({
       top: elementPos - offset,
@@ -48,10 +49,17 @@
     });
   };
 
-  let selectHeader = select('#header');
+  let selectHeader = select('#header-new'); 
   if (selectHeader) {
     const headerScrolled = () => {
-      (window.scrollY > 100) ? selectHeader.classList.add('header-scrolled') : selectHeader.classList.remove('header-scrolled');
+      let navbarElement = select('.custom-navbar');
+      if (window.scrollY > 100) {
+        selectHeader.classList.add('header-scrolled');
+        if (navbarElement) navbarElement.classList.add('navbar-scrolled');
+      } else {
+        selectHeader.classList.remove('header-scrolled');
+        if (navbarElement) navbarElement.classList.remove('navbar-scrolled');
+      }
     };
     window.addEventListener('load', headerScrolled);
     onscroll(document, headerScrolled);
@@ -67,30 +75,26 @@
   }
 
   on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile');
+    select('.custom-navbar').classList.toggle('navbar-mobile-active-wrapper');
+    select('#navbarNavLISA').classList.toggle('navbar-mobile');
     this.classList.toggle('bi-list');
     this.classList.toggle('bi-x');
   });
-
-  on('click', '.navbar .dropdown > a', function(e) {
-    if (select('#navbar').classList.contains('navbar-mobile')) {
-      e.preventDefault();
-      this.nextElementSibling.classList.toggle('dropdown-active');
-    }
-  }, true);
 
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
       e.preventDefault(); 
 
-      let navbar = select('#navbar');
+      let navbarMobileContainer = select('#navbarNavLISA');
+      let navbarWrapper = select('.custom-navbar');
       let navbarToggle = select('.mobile-nav-toggle'); 
 
       scrollto(this.hash);
       
-      if (navbar.classList.contains('navbar-mobile') && navbarToggle) {
+      if (navbarMobileContainer && navbarMobileContainer.classList.contains('navbar-mobile') && navbarToggle) {
         setTimeout(() => {
-          navbar.classList.remove('navbar-mobile'); 
+          navbarMobileContainer.classList.remove('navbar-mobile');
+          if (navbarWrapper) navbarWrapper.classList.remove('navbar-mobile-active-wrapper');
           navbarToggle.classList.remove('bi-x');   
           navbarToggle.classList.add('bi-list');
         }, 300); 
@@ -165,7 +169,7 @@
         spaceBetween: 20
       },
       1200: {
-        slidesPerView: 3, // Garanta que haja pelo menos 3 slides para isso funcionar bem
+        slidesPerView: 3,
         spaceBetween: 20
       }
     }
@@ -180,7 +184,6 @@
     })
   });
 
-  // Adicionando o preloader se ele existir no HTML original (presumindo que existia)
   let preloader = select('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {

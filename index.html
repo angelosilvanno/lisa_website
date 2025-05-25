@@ -11,13 +11,13 @@
 
     <link href="assets/img/lisa.png" rel="icon">
 
-    <!-- Google Fonts (Original + Montserrat para novos designs) -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <!-- Vendor CSS Files Originais -->
+    <!-- Vendor CSS Files -->
     <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,18 +27,21 @@
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+    <!-- Main CSS File (do template original) -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Custom LISA Styles -->
+    <link href="assets/css/custom-lisa-styles.css" rel="stylesheet">
 
 </head>
 
 <body>
 
     <!-- ======= NOVO Header ======= -->
-    <header id="header-new" class="fixed-top"> <!-- Novo ID para evitar conflitos com JS do template original, ou use o mesmo se for substituir completamente -->
+    <header id="header-new" class="fixed-top">
         <nav class="custom-navbar navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                        <img src="./assets/img/Group 5.png" alt="Logo LISA" width="100" height="40">
+                    <img src="./assets/img/Group 5.png" alt="Logo LISA" class="lisa-header-logo-img">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavLISA" aria-controls="navbarNavLISA" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -46,8 +49,9 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavLISA">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link scrollto active" href="#hero">Início</a></li>
-                        <li class="nav-item"><a class="nav-link scrollto" href="#about">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link scrollto" href="#services">Áreas de Atuação</a></li>
+                        <!-- ALTERADO O LINK E TEXTO AQUI -->
+                        <li class="nav-item"><a class="nav-link scrollto" href="#purposes-section">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#services">Serviços</a></li>
                         <li class="nav-item"><a class="nav-link scrollto" href="#team">Equipe</a></li>
                         <li class="nav-item"><a class="nav-link scrollto" href="./portfolio-details.html">Portfolio</a></li> 
                         <li class="nav-item"><a class="nav-link scrollto" href="#faq">FAQ</a></li>
@@ -59,9 +63,8 @@
     </header>
     <!-- End NOVO Header -->
 
-
     <!-- ======= NOVA Hero Section ======= -->
-    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <section id="hero">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 text-center text-lg-start" data-aos="fade-up">
@@ -71,7 +74,7 @@
                         desenvolvimento de software. Unimos expertise acadêmica e prática para criar tecnologias que
                         impulsionam empresas, profissionais e o futuro da inovação.
                     </p>
-                    <a href="#about" class="btn-lisa-primary scrollto">Conheça o Laboratório</a>
+                    <a href="#purposes-section" class="btn-lisa-primary scrollto">Leia Mais</a> <!-- Alterado para apontar para propósitos -->
                 </div>
                 <div class="col-lg-6 hero-illustration text-center text-lg-end" data-aos="fade-left" data-aos-delay="200">
                     <img src="./assets/img/Image 7.png" alt="Ilustração de tecnologia, cloud e banco de dados">
@@ -83,50 +86,65 @@
 
     <main id="main">
 
-        <!-- ======= About Section (Mantida do original por enquanto) ======= -->
-        <section id="about" class="about section-bg">
+        <!-- ======= NOVA Services Section (Áreas de Atuação) ======= -->
+        <section id="services" class="services">
             <div class="container" data-aos="fade-up">
-
-                <div class="section-title text-center" data-aos="zoom-out">
-                    <h2>Sobre</h2>
-                    <p>Quem somos?</p>
+                <div class="section-title-custom" data-aos="zoom-out">
+                    <h2>Como podemos te ajudar</h2>
+                    <p>Nossas pesquisas e projetos visam melhorar a eficiência, qualidade e segurança de processos em diversas áreas, por meio da aplicação de técnicas de automação e tecnologias avançadas.</p>
                 </div>
-
-                <div class="row gy-4 align-items-center">
-                    <div class="col-lg-6 content" data-aos="fade-right">
-                        <p>
-                            Nós somos um grupo de professores mestres e doutores em computação, especialistas em automação de processos, processamento de sinais, inteligência artificial, melhoria de processos de desenvolvimento de software, desenvolvimento web e automação industrial.
-                        </p>
-                        <ul class="list-unstyled ps-0">
-                            <li class="d-flex align-items-start mb-2">
-                                <i class="ri-check-double-line me-2 flex-shrink-0"></i>
-                                <span>Utilizamos nossos conhecimentos para criar soluções inovadoras para diversos setores.</span>
-                            </li>
-                            <li class="d-flex align-items-start mb-2">
-                                <i class="ri-check-double-line me-2 flex-shrink-0"></i>
-                                <span>Estamos sempre atualizados em relação às últimas tendências e tecnologias emergentes.</span>
-                            </li>
-                            <li class="d-flex align-items-start mb-2">
-                                <i class="ri-check-double-line me-2 flex-shrink-0"></i>
-                                <span>Contribuímos para o avanço da comunidade de tecnologia e compartilhamos nossos conhecimentos com nossos alunos e outros profissionais.</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-6" data-aos="fade-left">
-                        <p>
-                            Nossas pesquisas e projetos visam melhorar a eficiência, qualidade e segurança de processos em diversas áreas, por meio da aplicação de técnicas de automação e tecnologias avançadas.
-                        </p>
-                        <a href="#contact" class="btn btn-learn-more scrollto">Saiba Mais</a>
-                    </div>
+                <div class="row gy-4 justify-content-center">
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100"><div class="service-card"><div class="service-icon-wrapper"><i class="bi bi-gear-wide-connected"></i></div><h5>Automação de Processos</h5><p>Automações dos processos organizacionais, bem como treinamentos e otimização de processos para melhoria de eficiência em orgãos públicos e empresas privadas.</p></div></div>
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200"><div class="service-card"><div class="service-icon-wrapper"><i class="bi bi-brain"></i></div><h5>Inteligência Artificial</h5><p>Integração de inteligência artificial a processos organizacionais ou ferramentas corporativas para melhoria de processos ou desenvolvimento de novas soluções.</p></div></div>
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300"><div class="service-card"><div class="service-icon-wrapper"><i class="bi bi-mortarboard"></i></div><h5>Capacitação</h5><p>Oferecemos capacitações direcionadas para formação ou atualização de profissionais que exercem atividades dentro das nossas especialidades.</p></div></div>
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400"><div class="service-card"><div class="service-icon-wrapper"><i class="bi bi-globe2"></i></div><h5>Desenvolvimento Web</h5><p>Desenvolvimento de aplicações web ou mobile para atender/oferecer serviços específicos para clientes ou colaboradores.</p></div></div>
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500"><div class="service-card"><div class="service-icon-wrapper"><i class="bi bi-cloud-arrow-up"></i></div><h5>Migração para Nuvem</h5><p>Serviço de suporte de migração para Nuvem AWS de sistemas existentes visando escalabilidade, segurança e implantação de novas funcionalidades.</p></div></div>
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600"><div class="service-card"><div class="service-icon-wrapper"><i class="bi bi-robot"></i></div><h5>Automação Industrial</h5><p>Desenvolvimento ou melhoria de mecanismos de automação industrial para diversos setores como agrícola, hospitalar, comercial, etc.</p></div></div>
                 </div>
-
             </div>
-        </section><!-- End About Section -->
+        </section>
+        <!-- End NOVA Services Section -->
 
+         <!-- ======= Seção Nossos Propósitos ======= -->
+        <section id="purposes-section" class="section-bg">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 purpose-illustration text-center text-lg-start mb-4 mb-lg-0" data-aos="fade-right">
+                        <img src="./assets/img/image9.png" alt="Ilustração Nossos Propósitos">
+                    </div>
+                    <div class="col-lg-8" data-aos="fade-left" data-aos-delay="150">
+                        <div class="section-title-custom text-center text-lg-start"> 
+                            <h2>Nossos Propósitos</h2>
+                            <p>Conheça a missão, visão e valores que guiam nosso programa.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="purpose-card">
+                                    <h5>Missão:</h5>
+                                    <p>Estar na vanguarda da tecnologia, aplicando as tendências mais atuais para resolver desafios complexos.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="purpose-card">
+                                    <h5>Visão:</h5>
+                                    <p>Ser referência na criação de soluções tecnológicas inovadoras que gerem impacto positivo.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="purpose-card">
+                                    <h5>Valores:</h5>
+                                    <p>Compartilhar conhecimento, fomentar a comunidade e crescer com propósito.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End NOVA Seção Nossos Propósitos -->
 
         <!-- ======= NOVA Seção CTA (Call to Action) ======= -->
-        <section id="cta" class="cta"> <!-- Reutilizando ID #cta -->
+        <section id="cta" class="cta">
             <div class="container" data-aos="zoom-in">
                 <div class="row align-items-center">
                     <div class="col-lg-8 text-center text-lg-start mb-4 mb-lg-0">
@@ -142,62 +160,6 @@
         <!-- End NOVA Seção CTA -->
 
 
-        <!-- ======= NOVA Services Section (Áreas de Atuação) ======= -->
-        <section id="services" class="services">  <!-- Removido section-bg para usar o estilo novo -->
-            <div class="container" data-aos="fade-up">
-                <div class="section-title-custom" data-aos="zoom-out">
-                    <h2>Como podemos te ajudar</h2>
-                    <p>Nossas pesquisas e projetos visam melhorar a eficiência, qualidade e segurança de processos em diversas áreas, por meio da aplicação de técnicas de automação e tecnologias avançadas.</p>
-                </div>
-
-                <div class="row gy-4 justify-content-center">
-                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="service-card">
-                            <div class="service-icon-wrapper"><i class="bi bi-gear-wide-connected"></i></div>
-                            <h5>Automação de Processos</h5>
-                            <p>Automações dos processos organizacionais, bem como treinamentos e otimização de processos para melhoria de eficiência em orgãos públicos e empresas privadas.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="service-card">
-                            <div class="service-icon-wrapper"><i class="bi bi-brain"></i></div>
-                            <h5>Inteligência Artificial</h5>
-                            <p>Integração de inteligência artificial a processos organizacionais ou ferramentas corporativas para melhoria de processos ou desenvolvimento de novas soluções.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="service-card">
-                            <div class="service-icon-wrapper"><i class="bi bi-mortarboard"></i></div>
-                            <h5>Capacitação</h5>
-                            <p>Oferecemos capacitações direcionadas para formação ou atualização de profissionais que exercem atividades dentro das nossas especialidades.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-                        <div class="service-card">
-                            <div class="service-icon-wrapper"><i class="bi bi-globe2"></i></div>
-                            <h5>Desenvolvimento Web</h5>
-                            <p>Desenvolvimento de aplicações web ou mobile para atender/oferecer serviços específicos para clientes ou colaboradores.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
-                        <div class="service-card">
-                            <div class="service-icon-wrapper"><i class="bi bi-cloud-arrow-up"></i></div>
-                            <h5>Migração para Nuvem</h5>
-                            <p>Serviço de suporte de migração para Nuvem AWS de sistemas existentes visando escalabilidade, segurança e implantação de novas funcionalidades.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
-                        <div class="service-card">
-                            <div class="service-icon-wrapper"><i class="bi bi-robot"></i></div>
-                            <h5>Automação Industrial</h5>
-                            <p>Desenvolvimento ou melhoria de mecanismos de automação industrial para diversos setores como agrícola, hospitalar, comercial, etc.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End NOVA Services Section -->
-
         <!-- ======= NOVA F.A.Q Section ======= -->
         <section id="faq" class="faq">
             <div class="container" data-aos="fade-up">
@@ -205,239 +167,63 @@
                     <h2>Perguntas Frequentes</h2>
                     <p>Tire suas dúvidas sobre temas técnicos e como participar das nossas iniciativas.</p>
                 </div>
-
                 <div class="accordion accordion-flush" id="faqAccordionCustom">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="faqH1">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqC1" aria-expanded="true" aria-controls="faqC1">O que é automação de processos?</button>
-                        </h2>
-                        <div id="faqC1" class="accordion-collapse collapse show" aria-labelledby="faqH1" data-bs-parent="#faqAccordionCustom">
-                            <div class="accordion-body">É a utilização de tecnologia para executar tarefas ou processos recorrentes com mínima intervenção humana, visando aumentar a eficiência, reduzir erros e custos.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="faqH2">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC2" aria-expanded="false" aria-controls="faqC2">O que é processamento de sinais?</button>
-                        </h2>
-                        <div id="faqC2" class="accordion-collapse collapse" aria-labelledby="faqH2" data-bs-parent="#faqAccordionCustom">
-                            <div class="accordion-body">É uma área da engenharia e computação que lida com a análise, modificação e síntese de sinais, como som, imagens, sinais biológicos (ECG, EEG), para extrair informação ou melhorar sua qualidade.</div>
-                        </div>
-                    </div>
-                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="faqH3">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC3" aria-expanded="false" aria-controls="faqC3">O que é inteligência artificial (IA)?</button>
-                        </h2>
-                        <div id="faqC3" class="accordion-collapse collapse" aria-labelledby="faqH3" data-bs-parent="#faqAccordionCustom">
-                            <div class="accordion-body">É um campo da ciência da computação que busca criar sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana, como aprender, raciocinar, perceber, compreender linguagem e tomar decisões.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="faqH4">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC4" aria-expanded="false" aria-controls="faqC4">O que é melhoria de processos de desenvolvimento de software?</button>
-                        </h2>
-                        <div id="faqC4" class="accordion-collapse collapse" aria-labelledby="faqH4" data-bs-parent="#faqAccordionCustom">
-                            <div class="accordion-body">Refere-se à aplicação de modelos (como CMMI, MPS.BR), metodologias (como Ágil, DevOps) e práticas para aprimorar a forma como o software é planejado, desenvolvido, testado e entregue, buscando maior qualidade, produtividade e previsibilidade.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="faqH5">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC5" aria-expanded="false" aria-controls="faqC5">O que é automação industrial?</button>
-                        </h2>
-                        <div id="faqC5" class="accordion-collapse collapse" aria-labelledby="faqH5" data-bs-parent="#faqAccordionCustom">
-                            <div class="accordion-body">É o uso de sistemas de controle, como computadores, CLPs (Controladores Lógicos Programáveis) e robôs, para controlar equipamentos e processos industriais, substituindo a operação manual.</div>
-                        </div>
-                    </div>
-                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="faqH6">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC6" aria-expanded="false" aria-controls="faqC6">Como posso colaborar com o LISA?</button>
-                        </h2>
-                        <div id="faqC6" class="accordion-collapse collapse" aria-labelledby="faqH6" data-bs-parent="#faqAccordionCustom">
-                            <div class="accordion-body">Empresas, instituições e pesquisadores podem colaborar através de projetos conjuntos de PD&I, convênios, programas de estágio, consultorias ou participação em eventos. Entre em contato para discutirmos as possibilidades.</div>
-                        </div>
-                    </div>
+                    <div class="accordion-item"><h2 class="accordion-header" id="faqH1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqC1" aria-expanded="true" aria-controls="faqC1">O que é automação de processos?</button></h2><div id="faqC1" class="accordion-collapse collapse show" aria-labelledby="faqH1" data-bs-parent="#faqAccordionCustom"><div class="accordion-body">É a utilização de tecnologia para executar tarefas ou processos recorrentes com mínima intervenção humana, visando aumentar a eficiência, reduzir erros e custos.</div></div></div>
+                    <div class="accordion-item"><h2 class="accordion-header" id="faqH2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC2" aria-expanded="false" aria-controls="faqC2">O que é processamento de sinais?</button></h2><div id="faqC2" class="accordion-collapse collapse" aria-labelledby="faqH2" data-bs-parent="#faqAccordionCustom"><div class="accordion-body">É uma área da engenharia e computação que lida com a análise, modificação e síntese de sinais, como som, imagens, sinais biológicos (ECG, EEG), para extrair informação ou melhorar sua qualidade.</div></div></div>
+                    <div class="accordion-item"><h2 class="accordion-header" id="faqH3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC3" aria-expanded="false" aria-controls="faqC3">O que é inteligência artificial (IA)?</button></h2><div id="faqC3" class="accordion-collapse collapse" aria-labelledby="faqH3" data-bs-parent="#faqAccordionCustom"><div class="accordion-body">É um campo da ciência da computação que busca criar sistemas capazes de realizar tarefas que normalmente exigiriam inteligência humana, como aprender, raciocinar, perceber, compreender linguagem e tomar decisões.</div></div></div>
+                    <div class="accordion-item"><h2 class="accordion-header" id="faqH4"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC4" aria-expanded="false" aria-controls="faqC4">O que é melhoria de processos de desenvolvimento de software?</button></h2><div id="faqC4" class="accordion-collapse collapse" aria-labelledby="faqH4" data-bs-parent="#faqAccordionCustom"><div class="accordion-body">Refere-se à aplicação de modelos (como CMMI, MPS.BR), metodologias (como Ágil, DevOps) e práticas para aprimorar a forma como o software é planejado, desenvolvido, testado e entregue, buscando maior qualidade, produtividade e previsibilidade.</div></div></div>
+                    <div class="accordion-item"><h2 class="accordion-header" id="faqH5"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC5" aria-expanded="false" aria-controls="faqC5">O que é automação industrial?</button></h2><div id="faqC5" class="accordion-collapse collapse" aria-labelledby="faqH5" data-bs-parent="#faqAccordionCustom"><div class="accordion-body">É o uso de sistemas de controle, como computadores, CLPs (Controladores Lógicos Programáveis) e robôs, para controlar equipamentos e processos industriais, substituindo a operação manual.</div></div></div>
+                    <div class="accordion-item"><h2 class="accordion-header" id="faqH6"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC6" aria-expanded="false" aria-controls="faqC6">Como posso colaborar com o LISA?</button></h2><div id="faqC6" class="accordion-collapse collapse" aria-labelledby="faqH6" data-bs-parent="#faqAccordionCustom"><div class="accordion-body">Empresas, instituições e pesquisadores podem colaborar através de projetos conjuntos de PD&I, convênios, programas de estágio, consultorias ou participação em eventos. Entre em contato para discutirmos as possibilidades.</div></div></div>
                 </div>
             </div>
         </section>
         <!-- End NOVA F.A.Q Section -->
 
         <!-- ======= NOVA Team Section ======= -->
-        <section id="team" class="team"> <!-- Removido section-bg para usar o estilo novo -->
+        <section id="team" class="team">
             <div class="container" data-aos="fade-up">
                 <div class="section-title-custom" data-aos="zoom-out">
                     <h2>Conheça o time por trás das soluções</h2>
                     <p>Profissionais especializados, apaixonados por inovação e comprometidos com os resultados do seu negócio. Juntos, unimos expertise técnica e visão estratégica para entregar valor real em cada projeto.</p>
                 </div>
-
                 <div class="row gy-4 justify-content-center">
-                    <!-- Membros da Equipe - Usando dados do HTML original -->
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="team-card">
-                            <img src="assets/img/team/segundo.png" alt="Dr. Francisco Carlos Segundo" class="team-card-img">
-                            <div class="team-card-body">
-                                <div class="team-card-info">
-                                    <h5 class="team-member-name">Dr. Francisco Carlos Segundo</h5>
-                                    <p class="team-member-role">Professor Pesquisador</p>
-                                    <div class="social-links-custom">
-                                        <a href="http://lattes.cnpq.br/SEU_ID_LATTES" target="_blank" rel="noopener noreferrer" title="Currículo Lattes"><i class="bi bi-journal-text"></i></a>
-                                        <a href="https://www.linkedin.com/in/SEU_LINKEDIN" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                                        <a href="https://github.com/SEU_GITHUB" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="bi bi-github"></i></a>
-                                    </div>
-                                </div>
-                                <!-- <a href="mailto:..." class="team-contact-icon"><i class="bi bi-envelope-fill"></i></a> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="team-card">
-                            <img src="assets/img/team/reudismam.jpg" alt="Dr. Reudismam Rolim" class="team-card-img">
-                            <div class="team-card-body">
-                                <div class="team-card-info">
-                                    <h5 class="team-member-name">Dr. Reudismam Rolim</h5>
-                                    <p class="team-member-role">Professor Pesquisador</p>
-                                     <div class="social-links-custom">
-                                        <a href="#" title="Currículo Lattes"><i class="bi bi-journal-text"></i></a>
-                                        <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="team-card">
-                            <img src="assets/img/team/walber2.jpg" alt="Dr. Walber Adriano" class="team-card-img">
-                            <div class="team-card-body">
-                                <div class="team-card-info">
-                                    <h5 class="team-member-name">Dr. Walber Adriano</h5>
-                                    <p class="team-member-role">Professor Pesquisador</p>
-                                     <div class="social-links-custom">
-                                        <a href="#" title="Currículo Lattes"><i class="bi bi-journal-text"></i></a>
-                                        <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                        <div class="team-card">
-                            <img src="assets/img/team/italo.jpg" alt="Dr. Ítalo Assis" class="team-card-img">
-                            <div class="team-card-body">
-                                <div class="team-card-info">
-                                    <h5 class="team-member-name">Dr. Ítalo Assis</h5>
-                                    <p class="team-member-role">Professor Pesquisador</p>
-                                     <div class="social-links-custom">
-                                        <a href="#" title="Currículo Lattes"><i class="bi bi-journal-text"></i></a>
-                                        <a href="https://www.linkedin.com/in/italo-assis/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                                        <a href="https://www.researchgate.net/profile/Italo-Assis" target="_blank" rel="noopener noreferrer" title="ResearchGate"><i class="bi bi-search"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="team-card">
-                            <img src="assets/img/team/samara.png" alt="Dra. Sâmara Paiva" class="team-card-img">
-                            <div class="team-card-body">
-                                <div class="team-card-info">
-                                    <h5 class="team-member-name">Dra. Sâmara Paiva</h5>
-                                    <p class="team-member-role">Professora Pesquisadora</p>
-                                     <div class="social-links-custom">
-                                        <a href="#" title="Currículo Lattes"><i class="bi bi-journal-text"></i></a>
-                                        <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="team-card">
-                            <img src="assets/img/team/rosana.jpeg" alt="Dra. Rosana Rego" class="team-card-img">
-                            <div class="team-card-body">
-                                <div class="team-card-info">
-                                    <h5 class="team-member-name">Dra. Rosana Rego</h5>
-                                    <p class="team-member-role">Professora Pesquisadora</p>
-                                     <div class="social-links-custom">
-                                        <a href="#" title="Currículo Lattes"><i class="bi bi-journal-text"></i></a>
-                                        <a href="https://www.linkedin.com/in/rosanacibely/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                                        <a href="https://github.com/roscibely" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="bi bi-github"></i></a>
-                                        <a href="https://www.researchgate.net/profile/R-C-B-Rego" target="_blank" rel="noopener noreferrer" title="ResearchGate"><i class="bi bi-search"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Adicione mais membros aqui, seguindo o padrão -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="team-card"><img src="assets/img/team/segundo.png" alt="Dr. Francisco Carlos Segundo" class="team-card-img"><div class="team-card-body"><div class="team-card-info"><h5 class="team-member-name">Dr. Francisco Carlos Segundo</h5><p class="team-member-role">Professor Pesquisador</p><div class="social-links-custom"><a href="#" target="_blank" rel="noopener noreferrer" title="Currículo Lattes"><i class="bi bi-journal-text"></i></a><a href="#" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="bi bi-linkedin"></i></a><a href="#" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="bi bi-github"></i></a></div></div><a href="mailto:segundo@ufersa.edu.br" class="team-contact-icon" aria-label="Contato Dr. Francisco Carlos Segundo"><i class="bi bi-envelope-fill"></i></a></div></div></div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200"><div class="team-card"><img src="assets/img/team/reudismam.jpg" alt="Dr. Reudismam Rolim" class="team-card-img"><div class="team-card-body"><div class="team-card-info"><h5 class="team-member-name">Dr. Reudismam Rolim</h5><p class="team-member-role">Professor Pesquisador</p><div class="social-links-custom"><a href="#" title="Currículo Lattes"><i class="bi bi-journal-text"></i></a><a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a></div></div><a href="mailto:reudismam.rolim@ufersa.edu.br" class="team-contact-icon" aria-label="Contato Dr. Reudismam Rolim"><i class="bi bi-envelope-fill"></i></a></div></div></div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300"><div class="team-card"><img src="assets/img/team/walber2.jpg" alt="Dr. Walber Adriano" class="team-card-img"><div class="team-card-body"><div class="team-card-info"><h5 class="team-member-name">Dr. Walber Adriano</h5><p class="team-member-role">Professor Pesquisador</p><div class="social-links-custom"><a href="#" title="Currículo Lattes"><i class="bi bi-journal-text"></i></a><a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a></div></div><a href="mailto:walber.adriano@ufersa.edu.br" class="team-contact-icon" aria-label="Contato Dr. Walber Adriano"><i class="bi bi-envelope-fill"></i></a></div></div></div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400"><div class="team-card"><img src="assets/img/team/italo.jpg" alt="Dr. Ítalo Assis" class="team-card-img"><div class="team-card-body"><div class="team-card-info"><h5 class="team-member-name">Dr. Ítalo Assis</h5><p class="team-member-role">Professor Pesquisador</p><div class="social-links-custom"><a href="#" title="Currículo Lattes"><i class="bi bi-journal-text"></i></a><a href="https://www.linkedin.com/in/italo-assis/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="bi bi-linkedin"></i></a><a href="https://www.researchgate.net/profile/Italo-Assis" target="_blank" rel="noopener noreferrer" title="ResearchGate"><i class="bi bi-search"></i></a></div></div><a href="mailto:italo.assis@ufersa.edu.br" class="team-contact-icon" aria-label="Contato Dr. Ítalo Assis"><i class="bi bi-envelope-fill"></i></a></div></div></div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="team-card"><img src="assets/img/team/samara.png" alt="Dra. Sâmara Paiva" class="team-card-img"><div class="team-card-body"><div class="team-card-info"><h5 class="team-member-name">Dra. Sâmara Paiva</h5><p class="team-member-role">Professora Pesquisadora</p><div class="social-links-custom"><a href="#" title="Currículo Lattes"><i class="bi bi-journal-text"></i></a><a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a></div></div><a href="mailto:samara.paiva@ufersa.edu.br" class="team-contact-icon" aria-label="Contato Dra. Sâmara Paiva"><i class="bi bi-envelope-fill"></i></a></div></div></div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200"><div class="team-card"><img src="assets/img/team/rosana.jpeg" alt="Dra. Rosana Rego" class="team-card-img"><div class="team-card-body"><div class="team-card-info"><h5 class="team-member-name">Dra. Rosana Rego</h5><p class="team-member-role">Professora Pesquisadora</p><div class="social-links-custom"><a href="#" title="Currículo Lattes"><i class="bi bi-journal-text"></i></a><a href="https://www.linkedin.com/in/rosanacibely/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="bi bi-linkedin"></i></a><a href="https://github.com/roscibely" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="bi bi-github"></i></a><a href="https://www.researchgate.net/profile/R-C-B-Rego" target="_blank" rel="noopener noreferrer" title="ResearchGate"><i class="bi bi-search"></i></a></div></div><a href="mailto:rosana.rego@ufersa.edu.br" class="team-contact-icon" aria-label="Contato Dra. Rosana Rego"><i class="bi bi-envelope-fill"></i></a></div></div></div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300"><div class="team-card"><img src="assets/img/team/kennedy.png" class="img-fluid team-card-img" alt="Foto do Dr. Kennedy Reurisom"><div class="team-card-body"><div class="team-card-info"><h5 class="team-member-name">Dr. Kennedy Reurisom</h5><p class="team-member-role">Professor Pesquisador</p><div class="social-links-custom"><a href="#" title="Currículo Lattes"><i class="bi bi-journal-text"></i></a><a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a></div></div><a href="mailto:kennedy.reurisom@ufersa.edu.br" class="team-contact-icon" aria-label="Contato Dr. Kennedy Reurisom"><i class="bi bi-envelope-fill"></i></a></div></div></div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400"><div class="team-card"><img src="assets/img/team/felipe_torres2.jpg" class="img-fluid team-card-img" alt="Foto do Msc. Felipe Torres"><div class="team-card-body"><div class="team-card-info"><h5 class="team-member-name">Msc. Felipe Torres</h5><p class="team-member-role">Professor Pesquisador</p><div class="social-links-custom"><a href="#" title="Currículo Lattes"><i class="bi bi-journal-text"></i></a><a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a></div></div><a href="mailto:felipe.torres@ufersa.edu.br" class="team-contact-icon" aria-label="Contato Msc. Felipe Torres"><i class="bi bi-envelope-fill"></i></a></div></div></div>
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="team-card"><img src="assets/img/team/ferdinandy.png" class="img-fluid team-card-img" alt="Foto do Msc. Ferdinandy Chagas"><div class="team-card-body"><div class="team-card-info"><h5 class="team-member-name">Msc. Ferdinandy Chagas</h5><p class="team-member-role">Professor Pesquisador</p><div class="social-links-custom"><a href="#" title="Currículo Lattes"><i class="bi bi-journal-text"></i></a><a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a></div></div><a href="mailto:ferdinandy.chagas@ufersa.edu.br" class="team-contact-icon" aria-label="Contato Msc. Ferdinandy Chagas"><i class="bi bi-envelope-fill"></i></a></div></div></div>
                 </div>
             </div>
         </section>
         <!-- End NOVA Team Section -->
 
         <!-- ======= NOVA Contact Section ======= -->
-        <section id="contact" class="contact">
+        <section id="contact">
             <div class="container" data-aos="fade-up">
                 <div class="section-title-custom" data-aos="zoom-out">
                     <h2>Entre em Contato</h2>
                     <p>Ficou com dúvidas ou quer saber mais? Fale com a nossa equipe. Estamos prontos para ajudar.</p>
                 </div>
-
                 <div class="contact-form-container" data-aos="fade-up" data-aos-delay="100">
-                    <!-- Formulário com action e classes do original, mas com layout e campos do novo -->
                     <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                         <div class="row gy-3">
-                            <div class="col-md-6">
-                                <label for="contactNameForm" class="form-label">Nome</label>
-                                <input type="text" name="name" class="form-control" id="contactNameForm" placeholder="Digite seu nome completo" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="contactEmailForm" class="form-label">E-mail</label>
-                                <input type="email" class="form-control" name="email" id="contactEmailForm" placeholder="Digite seu e-mail" required>
-                            </div>
-                            <div class="col-12">
-                                <label for="contactSubjectForm" class="form-label">Assunto</label>
-                                <input type="text" class="form-control" name="subject" id="contactSubjectForm" placeholder="Informe o assunto da mensagem" required>
-                            </div>
-                            <div class="col-12 mb-3">
-                                <label for="contactMessageForm" class="form-label">Mensagem</label>
-                                <textarea class="form-control" name="message" id="contactMessageForm" rows="5" placeholder="Escreva sua mensagem aqui" required></textarea>
-                            </div>
-                            <div class="col-12 text-center">
-                                <div class="loading">Enviando...</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Mensagem enviada com sucesso. Agradecemos o contato!</div>
-                                <button type="submit" class="btn btn-submit-form">Enviar Mensagem</button>
-                            </div>
+                            <div class="col-md-6"><label for="contactNameForm" class="form-label">Nome</label><input type="text" name="name" class="form-control" id="contactNameForm" placeholder="Digite seu nome completo" required></div>
+                            <div class="col-md-6"><label for="contactEmailForm" class="form-label">E-mail</label><input type="email" class="form-control" name="email" id="contactEmailForm" placeholder="Digite seu e-mail" required></div>
+                            <div class="col-12"><label for="contactSubjectForm" class="form-label">Assunto</label><input type="text" class="form-control" name="subject" id="contactSubjectForm" placeholder="Informe o assunto da mensagem" required></div>
+                            <div class="col-12 mb-3"><label for="contactMessageForm" class="form-label">Mensagem</label><textarea class="form-control" name="message" id="contactMessageForm" rows="5" placeholder="Escreva sua mensagem aqui" required></textarea></div>
+                            <div class="col-12 text-center"><div class="loading">Enviando...</div><div class="error-message"></div><div class="sent-message">Mensagem enviada com sucesso. Agradecemos o contato!</div><button type="submit" class="btn btn-submit-form">Enviar Mensagem</button></div>
                         </div>
                     </form>
                 </div>
-
                 <div class="contact-info-boxes" data-aos="fade-up" data-aos-delay="200">
                     <div class="row gy-4 justify-content-center">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="contact-info-card">
-                                <div class="contact-info-icon"><i class="bi bi-geo-alt-fill"></i></div>
-                                <div class="contact-info-content">
-                                    <h6>Endereço:</h6>
-                                    <p>BR-226, S/N, Pau dos Ferros - RN, 59900-000</p> <!-- Usei endereço novo, adapte se necessário -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="contact-info-card">
-                                <div class="contact-info-icon"><i class="bi bi-envelope-fill"></i></div>
-                                <div class="contact-info-content">
-                                    <h6>E-mail:</h6>
-                                    <p><a href="mailto:lisa@ufersa.edu.br">lisa@ufersa.edu.br</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="contact-info-card">
-                                <div class="contact-info-icon"><i class="bi bi-telephone-fill"></i></div>
-                                <div class="contact-info-content">
-                                    <h6>Telefone:</h6>
-                                    <p><a href="tel:+558433152275">+55 (84) 3315-2275</a></p> <!-- Usei telefone novo, adapte -->
-                                </div>
-                            </div>
-                        </div>
+                        <div class="col-lg-4 col-md-6"><div class="contact-info-card"><div class="contact-info-icon"><i class="bi bi-geo-alt-fill"></i></div><div class="contact-info-content"><h6>Endereço:</h6><p>BR-226, S/N, Pau dos Ferros - RN, 59900-000</p></div></div></div>
+                        <div class="col-lg-4 col-md-6"><div class="contact-info-card"><div class="contact-info-icon"><i class="bi bi-envelope-fill"></i></div><div class="contact-info-content"><h6>E-mail:</h6><p><a href="mailto:lisa@ufersa.edu.br">lisa@ufersa.edu.br</a></p></div></div></div>
+                        <div class="col-lg-4 col-md-6"><div class="contact-info-card"><div class="contact-info-icon"><i class="bi bi-telephone-fill"></i></div><div class="contact-info-content"><h6>Telefone:</h6><p><a href="tel:+558433152275">+55 (84) 3315-2275</a></p></div></div></div>
                     </div>
                 </div>
             </div>
@@ -446,13 +232,13 @@
 
     </main><!-- End #main -->
 
-      <!-- ======= Footer (Mantido do original) ======= -->
+      <!-- ======= Footer (Com cores ajustadas) ======= -->
       <footer id="footer">
         <div class="container">
-            <div class="footer-top pb-4">
+            <div class="footer-top">
                 <div class="row gy-4">
                     <div class="col-lg-6 col-md-6 footer-info">
-                         <a href="index.html" class="logo d-flex align-items-center mb-3 text-white text-decoration-none">
+                         <a href="index.html" class="logo d-flex align-items-center mb-3 text-decoration-none">
                             <span style="font-size: 24px; font-weight: 600;">LISA</span>
                          </a>
                          <p>Laboratório de Inovação em Software e Automação.</p>
@@ -461,32 +247,29 @@
                             <a href="https://github.com/lisa-ufersa" target="_blank" rel="noopener noreferrer" class="github"><i class="bx bxl-github"></i></a>
                         </div>
                     </div>
-
                     <div class="col-lg-3 col-6 footer-links">
                         <h4>Institucional</h4>
-                        <ul class="list-unstyled">
-                            <li><i class="bx bx-chevron-right"></i> <a href="#hero" class="text-decoration-none scrollto">Início</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#about" class="text-decoration-none scrollto">Sobre</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#services" class="text-decoration-none scrollto">Serviços</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="https://ufersa.edu.br/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">UFERSA</a></li>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#hero" class="scrollto">Início</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#purposes-section" class="scrollto">Propósitos</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#services" class="scrollto">Serviços</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="https://ufersa.edu.br/" target="_blank" rel="noopener noreferrer">UFERSA</a></li>
                         </ul>
                     </div>
-
                     <div class="col-lg-3 col-6 footer-links">
                         <h4>Nossas Áreas</h4>
-                        <ul class="list-unstyled">
-                            <li><i class="bx bx-chevron-right"></i> <a href="#services" class="text-decoration-none scrollto">Automação</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#services" class="text-decoration-none scrollto">Inteligência Artificial</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#services" class="text-decoration-none scrollto">Web & Mobile</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#services" class="text-decoration-none scrollto">IoT</a></li>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#services" class="scrollto">Automação</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#services" class="scrollto">Inteligência Artificial</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#services" class="scrollto">Web & Mobile</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#services" class="scrollto">IoT</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="container">
-            <div class="copyright pt-3 mt-3 border-top border-secondary border-opacity-25">
+            <div class="copyright">
                  © <strong><span>LISA</span></strong>. Todos os direitos reservados.
             </div>
         </div>
