@@ -33,11 +33,6 @@ section {
     position: absolute; width: 100%; z-index: 1030;
 }
 
-.custom-navbar .navbar {
-    padding: 0; margin: 0;
-    background-color: transparent !important;
-    box-shadow: none !important;
-}
 
 .custom-navbar .navbar-brand { display: flex; align-items: center; text-decoration: none; }
 .custom-navbar .logo-icon-wrapper {
