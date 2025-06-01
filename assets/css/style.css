@@ -84,7 +84,6 @@ section {
 .section-title-custom h2 { font-size: 2.5rem; font-weight: 700; color: #ffffff; margin-bottom: 1rem; }
 .section-title-custom p { font-size: 1.1rem; color: var(--lisa-text-muted); max-width: 800px; margin-left: auto; margin-right: auto; }
 
-/* Estilos para a NOVA SEÇÃO DE PROPÓSITOS (antiga #about) */
 #purposes-section {
     background-color: #1a1a2e;
     color: var(--lisa-text-light);
@@ -170,7 +169,13 @@ section {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .team-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(74, 63, 106, 0.3); }
-.team-card-img { width: 100%; height: 280px; object-fit: cover; display: block; }
+.team-card-img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    display: block;
+    background-color: var(--lisa-dark-card-alt);
+}
 .team-card-body {
     padding: 20px; background-color: var(--lisa-dark-card);
     display: flex; justify-content: space-between; align-items: center; flex-grow: 1;
